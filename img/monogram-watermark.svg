@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="goldgrad" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#DCC59B" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#B8945A" stop-opacity="0.04"/>
+    </radialGradient>
+  </defs>
+  <!-- ornamental ring -->
+  <g fill="none" stroke="#B8945A" stroke-width="0.8">
+    <circle cx="200" cy="200" r="180" opacity="0.25"/>
+    <circle cx="200" cy="200" r="155" opacity="0.15" stroke-dasharray="2 8"/>
+    <circle cx="200" cy="200" r="130" opacity="0.1"/>
+  </g>
+  <circle cx="200" cy="200" r="120" fill="url(#goldgrad)"/>
+  <!-- large monogram letter A -->
+  <text x="200" y="262" font-family="'Cormorant Garamond', serif" font-style="italic" font-weight="700" font-size="220" letter-spacing="-2" fill="#B8945A" fill-opacity="0.18" text-anchor="middle">A</text>
+  <!-- corner ornaments -->
+  <g stroke="#B8945A" stroke-width="0.8" fill="none" opacity="0.35">
+    <path d="M 50 50 L 50 80 M 50 50 L 80 50"/>
+    <path d="M 350 50 L 350 80 M 350 50 L 320 50"/>
+    <path d="M 50 350 L 50 320 M 50 350 L 80 350"/>
+    <path d="M 350 350 L 350 320 M 350 350 L 320 350"/>
+  </g>
+</svg>

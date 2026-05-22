@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15302A"/>
+      <stop offset="100%" stop-color="#0E1F1B"/>
+    </linearGradient>
+    <linearGradient id="brassDoc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5F0E6"/>
+      <stop offset="100%" stop-color="#E0C988"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="480" fill="url(#bgGrad)"/>
+
+  <!-- soft glow -->
+  <circle cx="300" cy="240" r="200" fill="#B8945A" fill-opacity="0.08"/>
+
+  <!-- input documents stacked -->
+  <g transform="translate(60 180)">
+    <rect x="6" y="6" width="120" height="160" fill="#1E4137" stroke="#B8945A" stroke-width="0.6" opacity="0.6"/>
+    <rect x="3" y="3" width="120" height="160" fill="#2A5648" stroke="#B8945A" stroke-width="0.6" opacity="0.8"/>
+    <rect x="0" y="0" width="120" height="160" fill="#FBF8F1" stroke="#B8945A" stroke-width="1"/>
+    <g stroke="#3D4945" stroke-width="0.8" opacity="0.6">
+      <line x1="14" y1="22" x2="100" y2="22"/>
+      <line x1="14" y1="34" x2="106" y2="34"/>
+      <line x1="14" y1="46" x2="82" y2="46"/>
+      <line x1="14" y1="68" x2="106" y2="68"/>
+      <line x1="14" y1="80" x2="92" y2="80"/>
+      <line x1="14" y1="92" x2="106" y2="92"/>
+      <line x1="14" y1="104" x2="76" y2="104"/>
+      <line x1="14" y1="126" x2="106" y2="126"/>
+      <line x1="14" y1="138" x2="86" y2="138"/>
+    </g>
+  </g>
+
+  <!-- arrows toward AI -->
+  <g stroke="#B8945A" stroke-width="1" fill="none" stroke-dasharray="3 4">
+    <line x1="190" y1="260" x2="240" y2="240"/>
+  </g>
+  <polygon points="245,240 235,234 235,246" fill="#B8945A"/>
+
+  <!-- AI core -->
+  <g transform="translate(300 240)">
+    <circle r="80" fill="#0E1F1B" stroke="#B8945A" stroke-width="1.4"/>
+    <circle r="80" fill="none" stroke="#DCC59B" stroke-width="0.5" opacity="0.4"/>
+    <circle r="70" fill="none" stroke="#B8945A" stroke-width="0.4" stroke-dasharray="2 6"/>
+    <text y="-6" font-family="'Cormorant Garamond', serif" font-size="28" letter-spacing="6" font-weight="600" fill="#DCC59B" text-anchor="middle">AI<tspan font-style="italic" fill="#C9A974">O</tspan>N</text>
+    <text y="14" font-family="Inter, sans-serif" font-size="7" letter-spacing="4" fill="#B8945A" text-anchor="middle">AI ENGINE</text>
+  </g>
+
+  <!-- arrows out to output -->
+  <g stroke="#B8945A" stroke-width="1" fill="none" stroke-dasharray="3 4">
+    <line x1="380" y1="240" x2="430" y2="220"/>
+  </g>
+  <polygon points="435,220 425,214 425,226" fill="#B8945A"/>
+
+  <!-- output documents stacked, with signature -->
+  <g transform="translate(440 170)">
+    <rect x="0" y="0" width="120" height="160" fill="url(#brassDoc)" stroke="#B8945A" stroke-width="1"/>
+    <g stroke="#0E1F1B" stroke-width="0.8" opacity="0.5">
+      <line x1="14" y1="22" x2="100" y2="22"/>
+      <line x1="14" y1="34" x2="106" y2="34"/>
+      <line x1="14" y1="46" x2="82" y2="46"/>
+      <line x1="14" y1="68" x2="106" y2="68"/>
+      <line x1="14" y1="80" x2="106" y2="80"/>
+      <line x1="14" y1="92" x2="76" y2="92"/>
+    </g>
+    <!-- gold seal -->
+    <circle cx="92" cy="130" r="14" fill="#B8945A" stroke="#0E1F1B" stroke-width="0.6"/>
+    <text x="92" y="134" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#0E1F1B" text-anchor="middle">✓</text>
+    <!-- signature line -->
+    <line x1="14" y1="138" x2="70" y2="138" stroke="#8E6E36" stroke-width="0.6"/>
+    <path d="M 16 134 q 8 -4 14 0 t 16 -2 t 14 2" stroke="#0E1F1B" stroke-width="0.8" fill="none" opacity="0.55"/>
+  </g>
+
+  <!-- labels -->
+  <text x="120" y="170" font-family="Inter, sans-serif" font-size="9" letter-spacing="3" font-weight="700" fill="#DCC59B" text-anchor="middle">YOUR INPUTS</text>
+  <text x="300" y="350" font-family="Inter, sans-serif" font-size="9" letter-spacing="3" font-weight="700" fill="#DCC59B" text-anchor="middle">AI DRAFTS · HUMAN REVIEWS</text>
+  <text x="500" y="160" font-family="Inter, sans-serif" font-size="9" letter-spacing="3" font-weight="700" fill="#DCC59B" text-anchor="middle">SIGNED &amp; FILED</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgGr" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5F0E6"/>
+      <stop offset="100%" stop-color="#FBF8F1"/>
+    </linearGradient>
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#DCC59B" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#DCC59B" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="microdots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="14" cy="14" r="0.6" fill="rgba(184,148,90,0.2)"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="600" fill="url(#bgGr)"/>
+  <rect width="1600" height="600" fill="url(#microdots)"/>
+
+  <!-- soft golden glow right -->
+  <circle cx="1380" cy="240" r="300" fill="url(#goldGlow)"/>
+
+  <!-- decorative arch top right -->
+  <g fill="none" stroke="#B8945A" stroke-width="0.7" opacity="0.35">
+    <path d="M 1100 600 L 1100 220 Q 1100 80 1240 80 Q 1380 80 1380 220 L 1380 600"/>
+    <path d="M 1150 600 L 1150 250 Q 1150 130 1240 130 Q 1330 130 1330 250 L 1330 600" stroke-opacity="0.7"/>
+  </g>
+
+  <!-- horizontal hairlines -->
+  <g stroke="rgba(184,148,90,0.18)">
+    <line x1="0" y1="320" x2="1600" y2="320" stroke-width="0.5"/>
+    <line x1="80" y1="150" x2="1300" y2="150" stroke-width="0.3"/>
+  </g>
+
+  <!-- big monogram A as faint watermark -->
+  <text x="1240" y="460" font-family="'Cormorant Garamond', serif" font-style="italic" font-weight="600" font-size="320" fill="#B8945A" fill-opacity="0.08" text-anchor="middle">A</text>
+</svg>

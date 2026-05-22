@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
+  <rect width="480" height="480" fill="#FFFFFF"/>
+
+  <!-- Background dot grid -->
+  <g fill="#DEDDD8" opacity="0.6">
+    <g><circle cx="60" cy="60" r="1"/><circle cx="120" cy="60" r="1"/><circle cx="180" cy="60" r="1"/></g>
+    <g><circle cx="60" cy="120" r="1"/><circle cx="420" cy="120" r="1"/></g>
+    <g><circle cx="60" cy="420" r="1"/><circle cx="120" cy="420" r="1"/><circle cx="420" cy="420" r="1"/></g>
+  </g>
+
+  <!-- Document stack (back) -->
+  <g transform="translate(110 95)">
+    <rect width="160" height="220" fill="#F6F6F4" stroke="#DEDDD8" stroke-width="1"/>
+    <rect x="-8" y="8" width="160" height="220" fill="#FFFFFF" stroke="#DEDDD8" stroke-width="1"/>
+  </g>
+
+  <!-- Main ledger document -->
+  <g transform="translate(85 130)">
+    <rect width="240" height="280" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1.4"/>
+
+    <!-- Header bar -->
+    <rect x="0" y="0" width="240" height="36" fill="#0A0A0A"/>
+    <text x="20" y="24" font-family="Inter, sans-serif" font-size="10" letter-spacing="4" font-weight="700" fill="#FFFFFF">LEDGER · MAY 2026</text>
+
+    <!-- Table rows -->
+    <g font-family="Inter, sans-serif" font-size="9" fill="#3C3C39">
+      <text x="20" y="62" font-weight="600" fill="#7A7A75" letter-spacing="1.5">DATE</text>
+      <text x="100" y="62" font-weight="600" fill="#7A7A75" letter-spacing="1.5">DESCRIPTION</text>
+      <text x="220" y="62" font-weight="600" fill="#7A7A75" letter-spacing="1.5" text-anchor="end">AMT</text>
+    </g>
+    <line x1="20" y1="70" x2="220" y2="70" stroke="#DEDDD8"/>
+
+    <!-- ledger lines -->
+    <g font-family="Inter, sans-serif" font-size="9" fill="#3C3C39">
+      <text x="20" y="92">05/02</text><text x="100" y="92">Stripe payout</text><text x="220" y="92" text-anchor="end">$12,480</text>
+      <line x1="20" y1="100" x2="220" y2="100" stroke="#F6F6F4"/>
+      <text x="20" y="118">05/05</text><text x="100" y="118">AWS hosting</text><text x="220" y="118" text-anchor="end">−$418</text>
+      <line x1="20" y1="126" x2="220" y2="126" stroke="#F6F6F4"/>
+      <text x="20" y="144">05/08</text><text x="100" y="144">Payroll · biweekly</text><text x="220" y="144" text-anchor="end">−$24,600</text>
+      <line x1="20" y1="152" x2="220" y2="152" stroke="#F6F6F4"/>
+      <text x="20" y="170">05/12</text><text x="100" y="170">Stripe payout</text><text x="220" y="170" text-anchor="end">$8,932</text>
+      <line x1="20" y1="178" x2="220" y2="178" stroke="#F6F6F4"/>
+      <text x="20" y="196">05/15</text><text x="100" y="196">Office sublease</text><text x="220" y="196" text-anchor="end">−$3,200</text>
+      <line x1="20" y1="204" x2="220" y2="204" stroke="#F6F6F4"/>
+      <text x="20" y="222">05/20</text><text x="100" y="222">Stripe payout</text><text x="220" y="222" text-anchor="end">$15,170</text>
+    </g>
+
+    <!-- bottom total -->
+    <line x1="20" y1="240" x2="220" y2="240" stroke="#0A0A0A" stroke-width="0.6"/>
+    <text x="20" y="258" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="12" fill="#0A0A0A">net cash · month</text>
+    <text x="220" y="258" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#0A0A0A" text-anchor="end">$8,364</text>
+  </g>
+
+  <!-- AI badge overlay -->
+  <g transform="translate(320 110)">
+    <circle r="40" fill="#0A0A0A"/>
+    <circle r="40" fill="none" stroke="#B8945A" stroke-width="0.6" opacity="0.6">
+      <animate attributeName="r" values="40;48;40" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text y="-4" font-family="Inter, sans-serif" font-size="10" letter-spacing="3" font-weight="800" fill="#FFFFFF" text-anchor="middle">AION</text>
+    <text y="12" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="8" fill="#DCC59B" text-anchor="middle">categorizing</text>
+  </g>
+
+  <!-- Connecting arrow -->
+  <path d="M 285 165 Q 305 145 320 130" fill="none" stroke="#B8945A" stroke-width="1" stroke-dasharray="3 4"/>
+
+  <!-- CPA sign-off stamp -->
+  <g transform="translate(340 360)">
+    <circle r="36" fill="none" stroke="#B8945A" stroke-width="1.5"/>
+    <circle r="32" fill="none" stroke="#B8945A" stroke-width="0.6"/>
+    <text y="-6" font-family="Inter, sans-serif" font-size="7" letter-spacing="2" font-weight="700" fill="#8E6E36" text-anchor="middle">CPA</text>
+    <text y="8" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="9" fill="#8E6E36" text-anchor="middle">approved</text>
+    <text y="22" font-family="Inter, sans-serif" font-size="6" letter-spacing="1.5" fill="#B8945A" text-anchor="middle">05·31·2026</text>
+  </g>
+</svg>

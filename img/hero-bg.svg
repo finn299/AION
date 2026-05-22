@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#0E1F1B" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0E1F1B" stop-opacity="0.55"/>
+    </radialGradient>
+    <linearGradient id="goldOrb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#DCC59B" stop-opacity="0.42"/>
+      <stop offset="60%" stop-color="#B8945A" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#0E1F1B" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="archlines" x="0" y="0" width="120" height="900" patternUnits="userSpaceOnUse">
+      <line x1="60" y1="0" x2="60" y2="900" stroke="rgba(220,197,155,0.08)" stroke-width="1"/>
+      <line x1="0" y1="0" x2="0" y2="900" stroke="rgba(220,197,155,0.04)" stroke-width="0.5"/>
+    </pattern>
+    <pattern id="dotmesh" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="0" cy="0" r="0.7" fill="rgba(220,197,155,0.18)"/>
+    </pattern>
+    <filter id="blur1"><feGaussianBlur stdDeviation="80"/></filter>
+  </defs>
+
+  <!-- base -->
+  <rect width="1600" height="900" fill="#0E1F1B"/>
+  <rect width="1600" height="900" fill="url(#archlines)"/>
+  <rect width="1600" height="900" fill="url(#dotmesh)" opacity="0.5"/>
+
+  <!-- golden orb -->
+  <circle cx="1180" cy="320" r="360" fill="url(#goldOrb)" filter="url(#blur1)"/>
+  <circle cx="280" cy="720" r="220" fill="url(#goldOrb)" filter="url(#blur1)" opacity="0.5"/>
+
+  <!-- art-deco arch silhouettes (right side) -->
+  <g stroke="rgba(220,197,155,0.16)" stroke-width="1" fill="none">
+    <path d="M 1280 880 L 1280 280 Q 1280 140 1420 140 Q 1560 140 1560 280 L 1560 880" />
+    <path d="M 1320 880 L 1320 300 Q 1320 180 1420 180 Q 1520 180 1520 300 L 1520 880" stroke-opacity="0.6"/>
+    <path d="M 1360 880 L 1360 320 Q 1360 220 1420 220 Q 1480 220 1480 320 L 1480 880" stroke-opacity="0.4"/>
+  </g>
+
+  <!-- subtle horizontal rules -->
+  <g stroke="rgba(220,197,155,0.08)">
+    <line x1="0" y1="450" x2="1600" y2="450" stroke-width="0.6"/>
+    <line x1="80" y1="180" x2="1520" y2="180" stroke-width="0.4"/>
+  </g>
+
+  <!-- vignette -->
+  <rect width="1600" height="900" fill="url(#vignette)"/>
+</svg>

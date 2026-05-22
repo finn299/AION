@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480">
+  <defs>
+    <linearGradient id="netBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5F0E6"/>
+      <stop offset="100%" stop-color="#FBF8F1"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="480" fill="url(#netBg)"/>
+
+  <!-- connection lines -->
+  <g stroke="#B8945A" stroke-width="0.7" opacity="0.6" stroke-dasharray="3 4">
+    <line x1="300" y1="240" x2="120" y2="100"/>
+    <line x1="300" y1="240" x2="480" y2="100"/>
+    <line x1="300" y1="240" x2="80" y2="240"/>
+    <line x1="300" y1="240" x2="520" y2="240"/>
+    <line x1="300" y1="240" x2="120" y2="380"/>
+    <line x1="300" y1="240" x2="480" y2="380"/>
+    <line x1="300" y1="240" x2="300" y2="60"/>
+    <line x1="300" y1="240" x2="300" y2="420"/>
+  </g>
+
+  <!-- outer node rings -->
+  <g fill="#FBF8F1" stroke="#B8945A" stroke-width="1.2">
+    <circle cx="120" cy="100" r="26"/>
+    <circle cx="480" cy="100" r="26"/>
+    <circle cx="80" cy="240" r="26"/>
+    <circle cx="520" cy="240" r="26"/>
+    <circle cx="120" cy="380" r="26"/>
+    <circle cx="480" cy="380" r="26"/>
+    <circle cx="300" cy="60" r="26"/>
+    <circle cx="300" cy="420" r="26"/>
+  </g>
+  <g font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#8E6E36" text-anchor="middle">
+    <text x="300" y="65">01</text>
+    <text x="480" y="105">02</text>
+    <text x="520" y="245">03</text>
+    <text x="480" y="385">04</text>
+    <text x="300" y="425">05</text>
+    <text x="120" y="385">06</text>
+    <text x="80" y="245">07</text>
+    <text x="120" y="105">08</text>
+  </g>
+
+  <!-- AION core -->
+  <g transform="translate(300 240)">
+    <circle r="60" fill="#0E1F1B" stroke="#B8945A" stroke-width="1.4"/>
+    <circle r="60" fill="none" stroke="#DCC59B" stroke-width="0.4" opacity="0.6" stroke-dasharray="2 6"/>
+    <text y="-4" font-family="'Cormorant Garamond', serif" font-size="22" letter-spacing="5" font-weight="600" fill="#DCC59B" text-anchor="middle">AI<tspan font-style="italic" fill="#C9A974">O</tspan>N</text>
+    <text y="14" font-family="Inter, sans-serif" font-size="6" letter-spacing="3" fill="#B8945A" text-anchor="middle">AI ENGINE</text>
+  </g>
+
+  <!-- orbiting accent -->
+  <g fill="none" stroke="#B8945A" stroke-width="0.4" opacity="0.4">
+    <circle cx="300" cy="240" r="190" stroke-dasharray="1 6"/>
+  </g>
+</svg>

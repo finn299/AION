@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
+  <rect width="480" height="480" fill="#FFFFFF"/>
+
+  <!-- background hairlines -->
+  <g stroke="#DEDDD8" stroke-width="0.5">
+    <line x1="0" y1="180" x2="480" y2="180" stroke-dasharray="3 8"/>
+    <line x1="0" y1="280" x2="480" y2="280" stroke-dasharray="3 8"/>
+  </g>
+
+  <!-- AION center node -->
+  <g transform="translate(240 240)">
+    <circle r="56" fill="#0A0A0A"/>
+    <text y="-3" font-family="Inter, sans-serif" font-size="13" letter-spacing="4" font-weight="800" fill="#FFFFFF" text-anchor="middle">AION</text>
+    <text y="14" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="9" fill="#DCC59B" text-anchor="middle">people ops</text>
+    <circle r="56" fill="none" stroke="#B8945A" stroke-width="0.6" opacity="0.6">
+      <animate attributeName="r" values="56;68;56" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Person nodes around AION -->
+  <g font-family="Inter, sans-serif" font-size="9" letter-spacing="2" font-weight="600" fill="#3C3C39">
+
+    <!-- Person 1 (upper left) -->
+    <g transform="translate(100 130)">
+      <circle r="28" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1.2"/>
+      <circle cy="-6" r="8" fill="#0A0A0A"/>
+      <path d="M -14 16 Q 0 4 14 16 L 14 22 L -14 22 Z" fill="#0A0A0A"/>
+      <text y="48" text-anchor="middle">FOUNDER</text>
+    </g>
+
+    <!-- Person 2 (upper right) -->
+    <g transform="translate(380 130)">
+      <circle r="28" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1.2"/>
+      <circle cy="-6" r="8" fill="#0A0A0A"/>
+      <path d="M -14 16 Q 0 4 14 16 L 14 22 L -14 22 Z" fill="#0A0A0A"/>
+      <text y="48" text-anchor="middle">ENGINEER</text>
+    </g>
+
+    <!-- Person 3 (lower left) -->
+    <g transform="translate(100 360)">
+      <circle r="28" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1.2"/>
+      <circle cy="-6" r="8" fill="#0A0A0A"/>
+      <path d="M -14 16 Q 0 4 14 16 L 14 22 L -14 22 Z" fill="#0A0A0A"/>
+      <text y="48" text-anchor="middle">DESIGNER</text>
+    </g>
+
+    <!-- Person 4 (lower right) -->
+    <g transform="translate(380 360)">
+      <circle r="28" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1.2"/>
+      <circle cy="-6" r="8" fill="#0A0A0A"/>
+      <path d="M -14 16 Q 0 4 14 16 L 14 22 L -14 22 Z" fill="#0A0A0A"/>
+      <text y="48" text-anchor="middle">SALES</text>
+    </g>
+
+    <!-- Person 5 (top center) -->
+    <g transform="translate(240 80)">
+      <circle r="24" fill="#FFFFFF" stroke="#B8945A" stroke-width="1.2"/>
+      <circle cy="-5" r="7" fill="#B8945A"/>
+      <path d="M -12 14 Q 0 4 12 14 L 12 19 L -12 19 Z" fill="#B8945A"/>
+      <text y="40" text-anchor="middle" fill="#8E6E36">NEW HIRE</text>
+    </g>
+
+    <!-- Person 6 (bottom center) -->
+    <g transform="translate(240 405)">
+      <circle r="24" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1.2"/>
+      <circle cy="-5" r="7" fill="#0A0A0A"/>
+      <path d="M -12 14 Q 0 4 12 14 L 12 19 L -12 19 Z" fill="#0A0A0A"/>
+      <text y="40" text-anchor="middle">OPS</text>
+    </g>
+  </g>
+
+  <!-- Connection lines from AION -->
+  <g stroke="#B8945A" stroke-width="0.6" stroke-dasharray="3 4" opacity="0.55" fill="none">
+    <line x1="240" y1="240" x2="100" y2="130"/>
+    <line x1="240" y1="240" x2="380" y2="130"/>
+    <line x1="240" y1="240" x2="100" y2="360"/>
+    <line x1="240" y1="240" x2="380" y2="360"/>
+    <line x1="240" y1="240" x2="240" y2="80"/>
+    <line x1="240" y1="240" x2="240" y2="405"/>
+  </g>
+
+  <!-- Caption -->
+  <text x="240" y="463" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="13" fill="#8E6E36" text-anchor="middle">payroll · benefits · handbooks · compliance</text>
+</svg>

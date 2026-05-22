@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — AION Platform</title>
+<meta name="description" content="Book a free 30-minute consultation. Speak with an AION advisor about your formation, compliance, accounting, payroll or marketing needs." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-bar">
+    <a class="brand" href="index.html">
+      <span class="brand-aion">AION</span>
+      <span class="brand-mark"></span>
+      <span class="brand-tag">ai-native platform</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.getElementById('nav').classList.toggle('open')">≡</button>
+    <ul class="nav-links" id="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Book Consultation</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero with-visual">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">Home</a><span class="sep">/</span>Contact</div>
+    <div class="page-hero-grid">
+      <div>
+    <span class="ai-badge" style="margin-bottom:18px;">A human will reply</span>
+    <h1>Let's talk about <span class="gilt">your company.</span></h1>
+    <p class="lead">Tell us what you are working on. A human advisor — not the AI — will respond within one business day with next steps, or a friendly referral if we are not the right fit.</p>
+      </div>
+      <div class="page-hero-visual">
+        <img src="img/illustration-stamp.svg" alt="AION verification seal — a human will reply" style="width:100%; max-width:520px; height:auto;"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-white">
+  <div class="container">
+    <div class="contact-grid">
+
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks — we\'ll be in touch within one business day.'); this.reset();">
+        <h3>Send us a message</h3>
+        <p style="font-size:.95rem;">Prefer email? Reach us at <a href="mailto:hello@aionplatform.com"><strong>hello@aionplatform.com</strong></a>.</p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First name *</label>
+            <input id="first-name" name="first_name" type="text" required placeholder="Jane" />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last name *</label>
+            <input id="last-name" name="last_name" type="text" required placeholder="Doe" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" required placeholder="jane@yourcompany.com" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" placeholder="Acme Inc." />
+          </div>
+          <div class="form-group">
+            <label for="stage">Stage</label>
+            <select id="stage" name="stage">
+              <option>Idea / pre-formation</option>
+              <option>Just incorporated</option>
+              <option>Revenue ≤ $1M</option>
+              <option>$1M – $10M</option>
+              <option>$10M+</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="interest">Which module(s) are you interested in? *</label>
+          <select id="interest" name="interest" required>
+            <option value="">Select a module…</option>
+            <option>Registered Agent</option>
+            <option>Company Formation</option>
+            <option>Tax &amp; Bookkeeping</option>
+            <option>Payroll &amp; HR</option>
+            <option>ERP Implementation</option>
+            <option>Web &amp; Marketing</option>
+            <option>Trademark &amp; IP</option>
+            <option>Virtual Office</option>
+            <option>Consulting / Fractional</option>
+            <option>Multiple — let's discuss</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Tell us a bit about your needs</label>
+          <textarea id="message" name="message" placeholder="What is prompting you to reach out? What is the timeline?"></textarea>
+          <div class="form-note">Confidential by default. We will never share your information.</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Send Message</button>
+      </form>
+
+      <aside class="contact-aside">
+        <h3>Other ways to reach us</h3>
+        <div class="ornament"><span></span></div>
+        <ul class="info-list">
+          <li>
+            <div class="label">Email</div>
+            <div class="value"><a href="mailto:hello@aionplatform.com">hello@aionplatform.com</a></div>
+          </li>
+          <li>
+            <div class="label">Phone</div>
+            <div class="value"><a href="tel:+15555555555">+1 (555) 555-5555</a></div>
+          </li>
+          <li>
+            <div class="label">Office</div>
+            <div class="value">[Your Street Address]<br>[City, State, ZIP]</div>
+          </li>
+          <li>
+            <div class="label">Hours</div>
+            <div class="value">Mon–Fri · 9am–6pm ET</div>
+          </li>
+          <li>
+            <div class="label">Existing Clients</div>
+            <div class="value"><a href="mailto:clients@aionplatform.com">clients@aionplatform.com</a></div>
+          </li>
+        </ul>
+
+        <div class="feature-visual" style="margin-top:32px; padding: 32px;">
+          <span class="ai-badge" style="background:rgba(184,148,90,0.18); color:var(--brass-light);">Response SLA</span>
+          <h3 style="color:var(--white); margin-top:14px;">One business day. A human will reply.</h3>
+          <p>Every inbound is reviewed by a senior advisor — not a chatbot. You will get a substantive reply, not a templated"we got your message."</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section-off">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Common Questions</span>
+      <h2>Before you reach out…</h2>
+      <div class="ornament"><span></span></div>
+    </div>
+    <div class="faq-list">
+      <details class="faq">
+        <summary>What happens after I submit the form?</summary>
+        <div class="answer">A senior human advisor reviews your message and emails you within one business day. If a call makes sense, we will send a scheduling link. The first conversation — usually 30 minutes — is always free.</div>
+      </details>
+      <details class="faq">
+        <summary>I am not in the United States. Can you still help?</summary>
+        <div class="answer">Yes. A significant portion of our clients are founders outside the U.S. forming their first American entity. We handle international payments, document apostille, and time-zone-flexible scheduling.</div>
+      </details>
+      <details class="faq">
+        <summary>How quickly can you start work?</summary>
+        <div class="answer">For most modules, we can begin within 24–48 hours of contract signing. Same-day formation is possible in most states.</div>
+      </details>
+      <details class="faq">
+        <summary>Is the consultation really free?</summary>
+        <div class="answer">Yes — and there is no obligation. You will leave with a clear plan, whether or not you end up working with us.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-dark" href="index.html">
+          <span class="brand-aion">AION</span>
+          <span class="brand-mark"></span>
+          <span class="brand-tag">ai-native platform</span>
+        </a>
+        <p>AION LLC · An AI-native corporate services platform. Formation, registered agent, tax, HR, ERP, IP and marketing — under one engine.</p>
+      </div>
+      <div>
+        <h5>Modules</h5>
+        <ul>
+          <li><a href="registered-agent.html">Registered Agent</a></li>
+          <li><a href="formation.html">Company Formation</a></li>
+          <li><a href="tax.html">Tax &amp; Bookkeeping</a></li>
+          <li><a href="hr.html">Payroll &amp; HR</a></li>
+          <li><a href="erp.html">ERP Solutions</a></li>
+          <li><a href="marketing.html">Web &amp; Marketing</a></li>
+          <li><a href="trademark.html">Trademark &amp; IP</a></li>
+          <li><a href="virtual-office.html">Virtual Office</a></li>
+          <li><a href="consulting.html">Consulting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About AION</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:hello@aionplatform.com">hello@aionplatform.com</a></li>
+          <li><a href="tel:+15555555555">+1 (555) 555-5555</a></li>
+          <li>[Your Office Address]</li>
+          <li>Mon–Fri · 9am–6pm ET</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 AION LLC · All rights reserved.</div>
+      <div><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">AI Disclosures</a></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
