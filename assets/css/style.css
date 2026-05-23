@@ -248,12 +248,14 @@ section.cream { background: var(--cream-2); }
 .topbar {
   background: #0A0A0A;
   color: #FFFFFF;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 600;
   letter-spacing: .08em;
   text-transform: uppercase;
   font-family: var(--font-sans);
+  min-height: 40px;
 }
-.topbar .container { display: flex; justify-content: space-between; align-items: center; padding: 10px 28px; gap: 16px; color: #FFFFFF; }
+.topbar .container { display: flex; justify-content: space-between; align-items: center; padding: 10px 28px; gap: 16px; color: #FFFFFF; min-height: 40px; }
 .topbar a { color: #FFFFFF; }
 .topbar a:hover { color: var(--gold-2); }
 .topbar .topbar-right { display: inline-flex; gap: 16px; align-items: center; color: #FFFFFF; }
