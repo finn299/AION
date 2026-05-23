@@ -246,18 +246,18 @@ section.cream { background: var(--cream-2); }
 
 /* Top Bar */
 .topbar {
-  background: var(--ink);
-  color: rgba(255,255,255,.7);
+  background: #0A0A0A;
+  color: #FFFFFF;
   font-size: 12px;
   letter-spacing: .08em;
   text-transform: uppercase;
   font-family: var(--font-sans);
 }
-.topbar .container { display: flex; justify-content: space-between; align-items: center; padding: 10px 28px; gap: 16px; }
-.topbar a { color: rgba(255,255,255,.7); }
+.topbar .container { display: flex; justify-content: space-between; align-items: center; padding: 10px 28px; gap: 16px; color: #FFFFFF; }
+.topbar a { color: #FFFFFF; }
 .topbar a:hover { color: var(--gold-2); }
-.topbar .topbar-right { display: inline-flex; gap: 16px; align-items: center; }
-.topbar .topbar-right .locations { color: rgba(255,255,255,.55); }
+.topbar .topbar-right { display: inline-flex; gap: 16px; align-items: center; color: #FFFFFF; }
+.topbar .topbar-right .locations { color: #FFFFFF; }
 .member-portal-btn {
   display: inline-flex; align-items: center; gap: 8px;
   background: var(--gold);
