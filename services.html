@@ -11,19 +11,19 @@
 <link rel="stylesheet" href="assets/css/style.css" />
 <style>
 header .brand .wordmark { display: inline-flex; align-items: baseline; gap: 8px; font-family: 'Inter', sans-serif; }
-header .brand .wordmark .ai { font-weight: 800; font-size: 22px; letter-spacing: -.02em; color: #0F1B2D; }
-header .brand .wordmark .dot { width: 6px; height: 6px; background: #A88A4A; border-radius: 50%; transform: translateY(-3px); }
-header .brand .wordmark .tag { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: #6F6F6F; }
+header .brand .wordmark .ai { font-weight: 800; font-size: 34px; letter-spacing: -.025em; color: #0A0F1C; }
+header .brand .wordmark .dot { width: 10px; height: 10px; background: #C68A3E; border-radius: 50%; transform: translateY(-5px); }
+header .brand .wordmark .tag { font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: #2A2F38; font-weight: 600; }
 .topbar { background: #0A0A0A !important; }
-.topbar .container { color: rgba(255,255,255,.78) !important; padding: 0 28px !important; font-size: 11.5px !important; display: flex; justify-content: space-between; gap: 16px; }
+.topbar .container { color: rgba(255,255,255,.95) !important; padding: 0 28px !important; font-size: 11.5px !important; display: flex; justify-content: space-between; gap: 16px; }
 .topbar .container > span:first-child { display: inline-flex; align-items: center; padding: 8px 0; }
 .topbar-right { gap: 14px; display: inline-flex; align-items: stretch; }
-.topbar-right .locations { display: inline-flex; align-items: center; padding: 8px 0; color: rgba(255,255,255,.7); }
+.topbar-right .locations { display: inline-flex; align-items: center; padding: 8px 0; color: rgba(255,255,255,.88); }
 .topbar .member-portal-btn { padding: 0 24px; display: inline-flex; align-items: center; font-size: 11px; letter-spacing: .16em; background: #C9A961 !important; color: #FFFFFF !important; font-weight: 700; }
 button.mobile-toggle { display: inline-flex; align-items: center; background: #0A0A0A; color: #FFF; padding: 10px 16px; border: 1px solid #0A0A0A; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; cursor: pointer; }
 @media (min-width: 1025px) { button.mobile-toggle { display: none !important; } }
 nav.primary { display: flex; align-items: center; }
-nav.primary > .nav-item > a { color: #2A2F38 !important; font-size: 13px; font-weight: 500; letter-spacing: 0.06em; padding: 22px 14px; }
+nav.primary > .nav-item > a { color: #0A0F1C !important; font-size: 14px; font-weight: 600; letter-spacing: 0.05em; padding: 22px 14px; }
 header.site-header .nav-wrap { padding: 0 28px !important; display: flex; justify-content: space-between; align-items: center; max-width: 1240px; margin: 0 auto; }
 nav.primary > .nav-item > a.cta-btn { background: #0A1424 !important; color: #FFFFFF !important; font-size: 12px; font-weight: 600; letter-spacing: 0.10em; padding: 10px 20px !important; margin-left: 12px; text-transform: uppercase; }
 .page-head h1 em { color: #A88A4A; font-style: italic; }
@@ -35,6 +35,12 @@ html, body { overflow-x: hidden !important; }
   nav.primary.mobile-open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #FFF; padding: 14px 24px; border-bottom: 1px solid #E8E6E0; z-index: 99; }
   nav.primary.mobile-open .nav-item > a { display: block; padding: 14px 0 !important; border-bottom: 1px solid #E8E6E0; }
 }
+
+.card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+.card .card-img { width: 100%; height: 180px; object-fit: cover; display: block; }
+.card .card-body { padding: 28px; flex: 1; display: flex; flex-direction: column; }
+.card .card-body .num { margin-bottom: 14px; }
+.card .card-body .more { margin-top: auto; padding-top: 16px; }
 </style>
 </head>
 <body>
@@ -54,15 +60,15 @@ html, body { overflow-x: hidden !important; }
 <section class="cream">
   <div class="container">
     <div class="cards">
-      <div class="card"><div class="num">01</div><h3>Registered Agent</h3><p>Statutory representation in all 50 U.S. states with same-day document handling and real-time alerts. AI classifies every incoming document the moment it arrives.</p><a class="more" href="registered-agent.html">Registered Agent &rarr;</a></div>
-      <div class="card"><div class="num">02</div><h3>Company Formation</h3><p>LLCs, C-Corps, S-Corps and nonprofits filed quickly in any state. AI prepares articles, operating agreements, EIN forms and S-elections; attorneys review before filing.</p><a class="more" href="formation.html">Formation &rarr;</a></div>
-      <div class="card"><div class="num">03</div><h3>Tax &amp; Bookkeeping</h3><p>AI categorizes every transaction, reconciles accounts and drafts your federal and state returns. CPAs review the books monthly and sign every filing.</p><a class="more" href="tax.html">Tax &amp; Bookkeeping &rarr;</a></div>
-      <div class="card"><div class="num">04</div><h3>Payroll &amp; HR</h3><p>Multi-state payroll, benefits administration, handbooks tuned to your jurisdictions, and ongoing compliance. AI runs the cycles; HR leads handle people decisions.</p><a class="more" href="hr.html">Payroll &amp; HR &rarr;</a></div>
-      <div class="card"><div class="num">05</div><h3>ERP Implementation</h3><p>NetSuite, Odoo, SAP B1 and Microsoft Dynamics rollouts. AI maps your processes, configures the system, migrates data; senior consultants validate go-live.</p><a class="more" href="erp.html">ERP &rarr;</a></div>
-      <div class="card"><div class="num">06</div><h3>Web &amp; Marketing</h3><p>Brand identity, websites, SEO, paid acquisition, email and content. AI drafts at machine speed; editors and designers keep your brand voice intact.</p><a class="more" href="marketing.html">Web &amp; Marketing &rarr;</a></div>
-      <div class="card"><div class="num">07</div><h3>Trademark &amp; IP</h3><p>USPTO clearance searches, filings, office-action responses and renewals. AI prepares applications; licensed IP counsel signs every filing.</p><a class="more" href="trademark.html">Trademark &amp; IP &rarr;</a></div>
-      <div class="card"><div class="num">08</div><h3>Virtual Office</h3><p>Prestige business addresses with AI mail intelligence in 30+ U.S. cities. Same-day scanning, live receptionist, on-demand meeting rooms.</p><a class="more" href="virtual-office.html">Virtual Office &rarr;</a></div>
-      <div class="card"><div class="num">09</div><h3>Consulting</h3><p>Fractional CFO, COO and General Counsel. AI assembles data rooms, models and decks; senior operators provide the judgment and accountability.</p><a class="more" href="consulting.html">Consulting &rarr;</a></div>
+      <div class="card"><img class="card-img" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&q=80&auto=format&fit=crop" alt="Registered Agent" loading="lazy" /><div class="card-body"><div class="num">01</div><h3>Registered Agent</h3><p>Statutory representation in all 50 U.S. states with same-day document handling and real-time alerts. AI classifies every incoming document the moment it arrives.</p><a class="more" href="registered-agent.html">Registered Agent &rarr;</a></div></div>
+      <div class="card"><img class="card-img" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&q=80&auto=format&fit=crop" alt="Company Formation" loading="lazy" /><div class="card-body"><div class="num">02</div><h3>Company Formation</h3><p>LLCs, C-Corps, S-Corps and nonprofits filed quickly in any state. AI prepares articles, operating agreements, EIN forms and S-elections; attorneys review before filing.</p><a class="more" href="formation.html">Formation &rarr;</a></div></div>
+      <div class="card"><img class="card-img" src="https://images.unsplash.com/photo-1554224154-26032cdc0eb6?w=900&q=80&auto=format&fit=crop" alt="Tax &amp; Bookkeeping" loading="lazy" /><div class="card-body"><div class="num">03</div><h3>Tax &amp; Bookkeeping</h3><p>AI categorizes every transaction, reconciles accounts and drafts your federal and state returns. CPAs review the books monthly and sign every filing.</p><a class="more" href="tax.html">Tax &amp; Bookkeeping &rarr;</a></div></div>
+      <div class="card"><img class="card-img" src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=900&q=80&auto=format&fit=crop" alt="Payroll &amp; HR" loading="lazy" /><div class="card-body"><div class="num">04</div><h3>Payroll &amp; HR</h3><p>Multi-state payroll, benefits administration, handbooks tuned to your jurisdictions, and ongoing compliance. AI runs the cycles; HR leads handle people decisions.</p><a class="more" href="hr.html">Payroll &amp; HR &rarr;</a></div></div>
+      <div class="card"><img class="card-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80&auto=format&fit=crop" alt="ERP Implementation" loading="lazy" /><div class="card-body"><div class="num">05</div><h3>ERP Implementation</h3><p>NetSuite, Odoo, SAP B1 and Microsoft Dynamics rollouts. AI maps your processes, configures the system, migrates data; senior consultants validate go-live.</p><a class="more" href="erp.html">ERP &rarr;</a></div></div>
+      <div class="card"><img class="card-img" src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=900&q=80&auto=format&fit=crop" alt="Web &amp; Marketing" loading="lazy" /><div class="card-body"><div class="num">06</div><h3>Web &amp; Marketing</h3><p>Brand identity, websites, SEO, paid acquisition, email and content. AI drafts at machine speed; editors and designers keep your brand voice intact.</p><a class="more" href="marketing.html">Web &amp; Marketing &rarr;</a></div></div>
+      <div class="card"><img class="card-img" src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=900&q=80&auto=format&fit=crop" alt="Trademark &amp; IP" loading="lazy" /><div class="card-body"><div class="num">07</div><h3>Trademark &amp; IP</h3><p>USPTO clearance searches, filings, office-action responses and renewals. AI prepares applications; licensed IP counsel signs every filing.</p><a class="more" href="trademark.html">Trademark &amp; IP &rarr;</a></div></div>
+      <div class="card"><img class="card-img" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80&auto=format&fit=crop" alt="Virtual Office" loading="lazy" /><div class="card-body"><div class="num">08</div><h3>Virtual Office</h3><p>Prestige business addresses with AI mail intelligence in 30+ U.S. cities. Same-day scanning, live receptionist, on-demand meeting rooms.</p><a class="more" href="virtual-office.html">Virtual Office &rarr;</a></div></div>
+      <div class="card"><img class="card-img" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=900&q=80&auto=format&fit=crop" alt="Consulting" loading="lazy" /><div class="card-body"><div class="num">09</div><h3>Consulting</h3><p>Fractional CFO, COO and General Counsel. AI assembles data rooms, models and decks; senior operators provide the judgment and accountability.</p><a class="more" href="consulting.html">Consulting &rarr;</a></div></div>
     </div>
   </div>
 </section>

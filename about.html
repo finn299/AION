@@ -11,19 +11,19 @@
 <link rel="stylesheet" href="assets/css/style.css" />
 <style>
 header .brand .wordmark { display: inline-flex; align-items: baseline; gap: 8px; font-family: 'Inter', sans-serif; }
-header .brand .wordmark .ai { font-weight: 800; font-size: 22px; letter-spacing: -.02em; color: #0F1B2D; }
-header .brand .wordmark .dot { width: 6px; height: 6px; background: #A88A4A; border-radius: 50%; transform: translateY(-3px); }
-header .brand .wordmark .tag { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: #6F6F6F; }
+header .brand .wordmark .ai { font-weight: 800; font-size: 34px; letter-spacing: -.025em; color: #0A0F1C; }
+header .brand .wordmark .dot { width: 10px; height: 10px; background: #C68A3E; border-radius: 50%; transform: translateY(-5px); }
+header .brand .wordmark .tag { font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: #2A2F38; font-weight: 600; }
 .topbar { background: #0A0A0A !important; }
-.topbar .container { color: rgba(255,255,255,.78) !important; padding: 0 28px !important; font-size: 11.5px !important; display: flex; justify-content: space-between; gap: 16px; }
+.topbar .container { color: rgba(255,255,255,.95) !important; padding: 0 28px !important; font-size: 11.5px !important; display: flex; justify-content: space-between; gap: 16px; }
 .topbar .container > span:first-child { display: inline-flex; align-items: center; padding: 8px 0; }
 .topbar-right { gap: 14px; display: inline-flex; align-items: stretch; }
-.topbar-right .locations { display: inline-flex; align-items: center; padding: 8px 0; color: rgba(255,255,255,.7); }
+.topbar-right .locations { display: inline-flex; align-items: center; padding: 8px 0; color: rgba(255,255,255,.88); }
 .topbar .member-portal-btn { padding: 0 24px; display: inline-flex; align-items: center; font-size: 11px; letter-spacing: .16em; background: #C9A961 !important; color: #FFFFFF !important; font-weight: 700; }
 button.mobile-toggle { display: inline-flex; align-items: center; background: #0A0A0A; color: #FFF; padding: 10px 16px; border: 1px solid #0A0A0A; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; cursor: pointer; }
 @media (min-width: 1025px) { button.mobile-toggle { display: none !important; } }
 nav.primary { display: flex; align-items: center; }
-nav.primary > .nav-item > a { color: #2A2F38 !important; font-size: 13px; font-weight: 500; letter-spacing: 0.06em; padding: 22px 14px; }
+nav.primary > .nav-item > a { color: #0A0F1C !important; font-size: 14px; font-weight: 600; letter-spacing: 0.05em; padding: 22px 14px; }
 header.site-header .nav-wrap { padding: 0 28px !important; display: flex; justify-content: space-between; align-items: center; max-width: 1240px; margin: 0 auto; }
 nav.primary > .nav-item > a.cta-btn { background: #0A1424 !important; color: #FFFFFF !important; font-size: 12px; font-weight: 600; letter-spacing: 0.10em; padding: 10px 20px !important; margin-left: 12px; text-transform: uppercase; }
 .page-head h1 em { color: #A88A4A; font-style: italic; }
@@ -35,6 +35,12 @@ html, body { overflow-x: hidden !important; }
   nav.primary.mobile-open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #FFF; padding: 14px 24px; border-bottom: 1px solid #E8E6E0; z-index: 99; }
   nav.primary.mobile-open .nav-item > a { display: block; padding: 14px 0 !important; border-bottom: 1px solid #E8E6E0; }
 }
+
+.card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+.card .card-img { width: 100%; height: 180px; object-fit: cover; display: block; }
+.card .card-body { padding: 28px; flex: 1; display: flex; flex-direction: column; }
+.card .card-body .num { margin-bottom: 14px; }
+.card .card-body .more { margin-top: auto; padding-top: 16px; }
 </style>
 </head>
 <body>

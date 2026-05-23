@@ -11,15 +11,15 @@
 <link rel="stylesheet" href="assets/css/style.css" />
 <style id="aion-overrides">
 header .brand .wordmark { display: inline-flex; align-items: baseline; gap: 8px; font-family: 'Inter', sans-serif; }
-header .brand .wordmark .ai { font-weight: 800; font-size: 22px; letter-spacing: -.02em; color: #0F1B2D; }
-header .brand .wordmark .dot { width: 6px; height: 6px; background: #A88A4A; border-radius: 50%; transform: translateY(-3px); }
-header .brand .wordmark .tag { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: #6F6F6F; }
+header .brand .wordmark .ai { font-weight: 800; font-size: 34px; letter-spacing: -.025em; color: #0A0F1C; }
+header .brand .wordmark .dot { width: 10px; height: 10px; background: #C68A3E; border-radius: 50%; transform: translateY(-5px); }
+header .brand .wordmark .tag { font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: #2A2F38; font-weight: 600; }
 
 .topbar { background: #0A0A0A !important; }
-.topbar .container { color: rgba(255,255,255,.78) !important; padding: 0 0 0 28px !important; font-size: 11.5px !important; letter-spacing: .04em !important; gap: 16px !important; align-items: stretch !important; display: flex; justify-content: space-between; }
+.topbar .container { color: rgba(255,255,255,.95) !important; padding: 0 0 0 28px !important; font-size: 11.5px !important; letter-spacing: .04em !important; gap: 16px !important; align-items: stretch !important; display: flex; justify-content: space-between; }
 .topbar .container > span:first-child { display: inline-flex; align-items: center; padding: 8px 0 !important; }
 .topbar-right { gap: 14px !important; align-items: stretch !important; display: inline-flex; }
-.topbar-right .locations { display: inline-flex; align-items: center; padding: 8px 0 !important; color: rgba(255,255,255,.7); }
+.topbar-right .locations { display: inline-flex; align-items: center; padding: 8px 0 !important; color: rgba(255,255,255,.88); }
 .topbar .member-portal-btn { padding: 0 24px !important; align-self: stretch !important; display: inline-flex !important; align-items: center !important; font-size: 11px !important; letter-spacing: .16em !important; background: #C9A961 !important; color: #FFFFFF !important; font-weight: 700 !important; }
 .topbar .member-portal-btn:hover { background: #D8B570 !important; }
 
@@ -59,6 +59,12 @@ html, body { overflow-x: hidden !important; }
   nav.primary.mobile-open .nav-item > a { display: block; padding: 14px 0 !important; border-bottom: 1px solid #E8E6E0; }
   nav.primary.mobile-open .nav-item > a.cta-btn { margin: 14px 0 0 !important; text-align: center; }
 }
+
+.card { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+.card .card-img { width: 100%; height: 180px; object-fit: cover; display: block; }
+.card .card-body { padding: 28px; flex: 1; display: flex; flex-direction: column; }
+.card .card-body .num { margin-bottom: 14px; }
+.card .card-body .more { margin-top: auto; padding-top: 16px; }
 </style>
 </head>
 <body>
@@ -161,12 +167,12 @@ html, body { overflow-x: hidden !important; }
       <p class="lead" style="max-width: 760px;">We replace a patchwork of vendors with a single accountable partner — formation, registered agent, accounting, payroll, ERP, marketing, IP and consulting — all on one AI-native platform with credentialed humans on every output.</p>
     </div>
     <div class="cards">
-      <div class="card"><div class="num">01</div><h3>Registered Agent</h3><p>Statutory representation in all 50 U.S. states. AI classifies every incoming document in minutes, alerts your team, and files responses on time.</p><a class="more" href="registered-agent.html">Registered Agent &rarr;</a></div>
-      <div class="card"><div class="num">02</div><h3>Company Formation</h3><p>Delaware, Wyoming, Nevada or any state. AI prepares articles, operating agreements, EIN forms and S-elections — attorney-reviewed before filing.</p><a class="more" href="formation.html">Formation &rarr;</a></div>
-      <div class="card"><div class="num">03</div><h3>Tax &amp; Bookkeeping</h3><p>AI categorizes every transaction, reconciles accounts, and drafts your federal and state returns. CPAs review the books and sign every return.</p><a class="more" href="tax.html">Tax &amp; Bookkeeping &rarr;</a></div>
-      <div class="card"><div class="num">04</div><h3>Payroll &amp; HR</h3><p>Multi-state payroll, benefits administration, handbooks tuned to your jurisdictions, and ongoing compliance — run by AI, advised by HR leads.</p><a class="more" href="hr.html">Payroll &amp; HR &rarr;</a></div>
-      <div class="card"><div class="num">05</div><h3>ERP Implementation</h3><p>NetSuite, Odoo and SAP B1 rollouts. AI maps your processes, configures the system, migrates data — senior consultants validate go-live.</p><a class="more" href="erp.html">ERP &rarr;</a></div>
-      <div class="card"><div class="num">06</div><h3>Web &amp; Marketing</h3><p>Brand identity, websites, SEO, paid acquisition, email and content. AI drafts at machine speed; editors keep your brand voice intact.</p><a class="more" href="marketing.html">Web &amp; Marketing &rarr;</a></div>
+      <div class="card"><img class="card-img" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&q=80&auto=format&fit=crop" alt="Registered Agent" loading="lazy" /><div class="card-body"><div class="num">01</div><h3>Registered Agent</h3><p>Statutory representation in all 50 U.S. states. AI classifies every incoming document in minutes, alerts your team, and files responses on time.</p><a class="more" href="registered-agent.html">Registered Agent &rarr;</a></div></div>
+      <div class="card"><img class="card-img" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&q=80&auto=format&fit=crop" alt="Company Formation" loading="lazy" /><div class="card-body"><div class="num">02</div><h3>Company Formation</h3><p>Delaware, Wyoming, Nevada or any state. AI prepares articles, operating agreements, EIN forms and S-elections — attorney-reviewed before filing.</p><a class="more" href="formation.html">Formation &rarr;</a></div></div>
+      <div class="card"><img class="card-img" src="https://images.unsplash.com/photo-1554224154-26032cdc0eb6?w=900&q=80&auto=format&fit=crop" alt="Tax &amp; Bookkeeping" loading="lazy" /><div class="card-body"><div class="num">03</div><h3>Tax &amp; Bookkeeping</h3><p>AI categorizes every transaction, reconciles accounts, and drafts your federal and state returns. CPAs review the books and sign every return.</p><a class="more" href="tax.html">Tax &amp; Bookkeeping &rarr;</a></div></div>
+      <div class="card"><img class="card-img" src="https://images.unsplash.com/photo-1573164574572-cb89e39749b4?w=900&q=80&auto=format&fit=crop" alt="Payroll &amp; HR" loading="lazy" /><div class="card-body"><div class="num">04</div><h3>Payroll &amp; HR</h3><p>Multi-state payroll, benefits administration, handbooks tuned to your jurisdictions, and ongoing compliance — run by AI, advised by HR leads.</p><a class="more" href="hr.html">Payroll &amp; HR &rarr;</a></div></div>
+      <div class="card"><img class="card-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80&auto=format&fit=crop" alt="ERP Implementation" loading="lazy" /><div class="card-body"><div class="num">05</div><h3>ERP Implementation</h3><p>NetSuite, Odoo and SAP B1 rollouts. AI maps your processes, configures the system, migrates data — senior consultants validate go-live.</p><a class="more" href="erp.html">ERP &rarr;</a></div></div>
+      <div class="card"><img class="card-img" src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=900&q=80&auto=format&fit=crop" alt="Web &amp; Marketing" loading="lazy" /><div class="card-body"><div class="num">06</div><h3>Web &amp; Marketing</h3><p>Brand identity, websites, SEO, paid acquisition, email and content. AI drafts at machine speed; editors keep your brand voice intact.</p><a class="more" href="marketing.html">Web &amp; Marketing &rarr;</a></div></div>
     </div>
     <div style="margin-top: 28px;">
       <div class="card" style="background: var(--emerald); color: #FFF; border-color: var(--emerald);">
