@@ -3,211 +3,78 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="AION's nine corporate service modules — formation, registered agent, tax, payroll, ERP, marketing, IP, virtual office and consulting." />
 <title>Services — AION Platform</title>
-<meta name="description" content="AI-native modules for formation, registered agent, tax, HR, ERP, IP, marketing, virtual office and consulting." />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<style>
+header .brand .wordmark { display: inline-flex; align-items: baseline; gap: 8px; font-family: 'Inter', sans-serif; }
+header .brand .wordmark .ai { font-weight: 800; font-size: 22px; letter-spacing: -.02em; color: #0F1B2D; }
+header .brand .wordmark .dot { width: 6px; height: 6px; background: #A88A4A; border-radius: 50%; transform: translateY(-3px); }
+header .brand .wordmark .tag { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: #6F6F6F; }
+.topbar { background: #0A0A0A !important; }
+.topbar .container { color: rgba(255,255,255,.78) !important; padding: 0 28px !important; font-size: 11.5px !important; display: flex; justify-content: space-between; gap: 16px; }
+.topbar .container > span:first-child { display: inline-flex; align-items: center; padding: 8px 0; }
+.topbar-right { gap: 14px; display: inline-flex; align-items: stretch; }
+.topbar-right .locations { display: inline-flex; align-items: center; padding: 8px 0; color: rgba(255,255,255,.7); }
+.topbar .member-portal-btn { padding: 0 24px; display: inline-flex; align-items: center; font-size: 11px; letter-spacing: .16em; background: #C9A961 !important; color: #FFFFFF !important; font-weight: 700; }
+button.mobile-toggle { display: inline-flex; align-items: center; background: #0A0A0A; color: #FFF; padding: 10px 16px; border: 1px solid #0A0A0A; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; cursor: pointer; }
+@media (min-width: 1025px) { button.mobile-toggle { display: none !important; } }
+nav.primary { display: flex; align-items: center; }
+nav.primary > .nav-item > a { color: #2A2F38 !important; font-size: 13px; font-weight: 500; letter-spacing: 0.06em; padding: 22px 14px; }
+header.site-header .nav-wrap { padding: 0 28px !important; display: flex; justify-content: space-between; align-items: center; max-width: 1240px; margin: 0 auto; }
+nav.primary > .nav-item > a.cta-btn { background: #0A1424 !important; color: #FFFFFF !important; font-size: 12px; font-weight: 600; letter-spacing: 0.10em; padding: 10px 20px !important; margin-left: 12px; text-transform: uppercase; }
+.page-head h1 em { color: #A88A4A; font-style: italic; }
+html, body { overflow-x: hidden !important; }
+@media (max-width: 900px) {
+  .topbar .container { justify-content: flex-end; padding: 0 !important; height: 36px; }
+  .topbar .container > span:first-child, .topbar-right .locations { display: none; }
+  nav.primary { display: none; }
+  nav.primary.mobile-open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #FFF; padding: 14px 24px; border-bottom: 1px solid #E8E6E0; z-index: 99; }
+  nav.primary.mobile-open .nav-item > a { display: block; padding: 14px 0 !important; border-bottom: 1px solid #E8E6E0; }
+}
+</style>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container nav-bar">
-    <a class="brand" href="index.html">
-      <span class="brand-aion">AION</span>
-      <span class="brand-mark"></span>
-      <span class="brand-tag">ai-native platform</span>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.getElementById('nav').classList.toggle('open')">≡</button>
-    <ul class="nav-links" id="nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html" class="active">Services</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="contact.html" class="nav-cta">Book Consultation</a></li>
-    </ul>
-  </div>
-</header>
+<div class="topbar"><div class="container"><span>AION Platform &middot; AI-native corporate services for ambitious companies</span><span class="topbar-right"><span class="locations">New York &middot; Delaware &middot; Wyoming &middot; San Francisco &middot; Seoul</span><a href="contact.html" class="member-portal-btn">Client Portal</a></span></div></div>
 
-<section class="page-hero with-visual">
+<header class="site-header"><div class="nav-wrap"><a href="index.html" class="brand"><span class="wordmark"><span class="ai">AION</span><span class="dot"></span><span class="tag">platform</span></span></a><nav class="primary"><div class="nav-item"><a href="about.html">ABOUT</a></div><div class="nav-item"><a href="services.html">SERVICES</a></div><div class="nav-item"><a href="pricing.html">PRICING</a></div><div class="nav-item"><a href="about.html">PLATFORM</a></div><div class="nav-item"><a href="contact.html" class="cta-btn">CONTACT</a></div></nav><button class="mobile-toggle" onclick="document.querySelector('nav.primary').classList.toggle('mobile-open')">MENU</button></div></header>
+
+<section class="page-head" style="background: var(--cream-2); padding: 80px 0 60px;">
   <div class="container">
-    <div class="crumbs"><a href="index.html">Home</a><span class="sep">/</span>Services</div>
-    <div class="page-hero-grid">
-      <div>
-    <span class="ai-badge" style="margin-bottom:18px;">Nine AI Modules · One Platform</span>
-    <h1>Everything you need to launch, run, <span class="gilt">and grow.</span></h1>
-    <p class="lead">Nine practice areas — engineered to plug into each other so you never repeat yourself. AI handles the work; humans hold the standard.</p>
-      </div>
-      <div class="page-hero-visual">
-        <img src="img/illustration-network.svg" alt="Nine modules connected to one platform" style="width:100%; max-width:520px; height:auto;"/>
-      </div>
+    <div class="eyebrow">Services</div>
+    <h1>Nine modules. One <em>platform</em>.</h1>
+    <p class="lead" style="max-width: 760px; margin-top: 16px;">AION delivers a complete back office for ambitious companies — formation, compliance, finance, people, IT, IP and marketing — all on one AI-native platform with credentialed human review.</p>
+  </div>
+</section>
+
+<section class="cream">
+  <div class="container">
+    <div class="cards">
+      <div class="card"><div class="num">01</div><h3>Registered Agent</h3><p>Statutory representation in all 50 U.S. states with same-day document handling and real-time alerts. AI classifies every incoming document the moment it arrives.</p><a class="more" href="registered-agent.html">Registered Agent &rarr;</a></div>
+      <div class="card"><div class="num">02</div><h3>Company Formation</h3><p>LLCs, C-Corps, S-Corps and nonprofits filed quickly in any state. AI prepares articles, operating agreements, EIN forms and S-elections; attorneys review before filing.</p><a class="more" href="formation.html">Formation &rarr;</a></div>
+      <div class="card"><div class="num">03</div><h3>Tax &amp; Bookkeeping</h3><p>AI categorizes every transaction, reconciles accounts and drafts your federal and state returns. CPAs review the books monthly and sign every filing.</p><a class="more" href="tax.html">Tax &amp; Bookkeeping &rarr;</a></div>
+      <div class="card"><div class="num">04</div><h3>Payroll &amp; HR</h3><p>Multi-state payroll, benefits administration, handbooks tuned to your jurisdictions, and ongoing compliance. AI runs the cycles; HR leads handle people decisions.</p><a class="more" href="hr.html">Payroll &amp; HR &rarr;</a></div>
+      <div class="card"><div class="num">05</div><h3>ERP Implementation</h3><p>NetSuite, Odoo, SAP B1 and Microsoft Dynamics rollouts. AI maps your processes, configures the system, migrates data; senior consultants validate go-live.</p><a class="more" href="erp.html">ERP &rarr;</a></div>
+      <div class="card"><div class="num">06</div><h3>Web &amp; Marketing</h3><p>Brand identity, websites, SEO, paid acquisition, email and content. AI drafts at machine speed; editors and designers keep your brand voice intact.</p><a class="more" href="marketing.html">Web &amp; Marketing &rarr;</a></div>
+      <div class="card"><div class="num">07</div><h3>Trademark &amp; IP</h3><p>USPTO clearance searches, filings, office-action responses and renewals. AI prepares applications; licensed IP counsel signs every filing.</p><a class="more" href="trademark.html">Trademark &amp; IP &rarr;</a></div>
+      <div class="card"><div class="num">08</div><h3>Virtual Office</h3><p>Prestige business addresses with AI mail intelligence in 30+ U.S. cities. Same-day scanning, live receptionist, on-demand meeting rooms.</p><a class="more" href="virtual-office.html">Virtual Office &rarr;</a></div>
+      <div class="card"><div class="num">09</div><h3>Consulting</h3><p>Fractional CFO, COO and General Counsel. AI assembles data rooms, models and decks; senior operators provide the judgment and accountability.</p><a class="more" href="consulting.html">Consulting &rarr;</a></div>
     </div>
   </div>
 </section>
 
-<section class="section-white">
+<section class="dark">
   <div class="container">
-    <div class="grid grid-3">
-
-      <a class="service-card" href="registered-agent.html">
-        <div class="num">— 01</div>
-        <h3>Registered Agent</h3>
-        <p>AI receives and classifies service of process the moment it arrives — alerts you in minutes, files responses on time.</p>
-        <span class="more">Learn more</span>
-      </a>
-
-      <a class="service-card" href="formation.html">
-        <div class="num">— 02</div>
-        <h3>Company Formation</h3>
-        <p>AI prepares articles, operating agreements, EIN forms and S-elections for any state — attorney-reviewed before filing.</p>
-        <span class="more">Learn more</span>
-      </a>
-
-      <a class="service-card" href="tax.html">
-        <div class="num">— 03</div>
-        <h3>Tax &amp; Bookkeeping</h3>
-        <p>AI categorizes transactions, reconciles accounts and drafts returns. CPAs review, sign and file.</p>
-        <span class="more">Learn more</span>
-      </a>
-
-      <a class="service-card" href="hr.html">
-        <div class="num">— 04</div>
-        <h3>Payroll &amp; HR</h3>
-        <p>AI runs payroll cycles, generates handbooks tuned to your states, tracks every compliance deadline.</p>
-        <span class="more">Learn more</span>
-      </a>
-
-      <a class="service-card dark" href="erp.html">
-        <div class="num">— 05</div>
-        <h3>ERP Implementation</h3>
-        <p>AI maps your processes, configures the ERP and migrates data. Consultants validate before go-live.</p>
-        <span class="more">Learn more</span>
-      </a>
-
-      <a class="service-card" href="marketing.html">
-        <div class="num">— 06</div>
-        <h3>Web &amp; Marketing</h3>
-        <p>AI drafts copy, generates designs, builds sites and runs email sequences — editors keep your brand on tone.</p>
-        <span class="more">Learn more</span>
-      </a>
-
-      <a class="service-card" href="trademark.html">
-        <div class="num">— 07</div>
-        <h3>Trademark &amp; IP</h3>
-        <p>AI runs clearance searches, prepares USPTO applications and tracks office actions. Counsel signs each filing.</p>
-        <span class="more">Learn more</span>
-      </a>
-
-      <a class="service-card" href="virtual-office.html">
-        <div class="num">— 08</div>
-        <h3>Virtual Office</h3>
-        <p>AI scans, classifies and summarizes your mail; routes time-sensitive items to a human concierge.</p>
-        <span class="more">Learn more</span>
-      </a>
-
-      <a class="service-card" href="consulting.html">
-        <div class="num">— 09</div>
-        <h3>Consulting</h3>
-        <p>AI assembles data rooms, builds models and drafts decks. Senior operators provide the judgment.</p>
-        <span class="more">Learn more</span>
-      </a>
-
-    </div>
+    <div class="section-head"><div class="eyebrow">Flexible Engagements</div><h2>One firm. Your <em>pace</em>.</h2><p>Single-module engagements, bundled packages, or full-stack outsourced back office. Every scope is fixed-fee and written down before we start.</p></div>
+    <div style="text-align: center; margin-top: 28px;"><a href="pricing.html" class="btn gold">See pricing &rarr;</a> <a href="contact.html" class="btn light" style="margin-left: 10px;">Discuss your scope</a></div>
   </div>
 </section>
 
-<section class="section-off">
-  <div class="container">
-    <div class="feature-row reverse">
-      <div>
-        <img src="img/illustration-network.svg" alt="The nine AION modules connect to one shared AI engine" style="width:100%; height:auto; border:1px solid var(--gray-100);"/>
-      </div>
-      <div>
-        <span class="eyebrow">Flexible Engagements</span>
-        <h2>One platform, <span class="gilt">your pace.</span></h2>
-        <div class="ornament"><span></span></div>
-        <p>Whether you need a single filing or an entirely outsourced back office, the engagement is shaped to your stage. Every scope is fixed-fee and written down before we start.</p>
-        <ul class="check-list">
-          <li>Single-module engagements (e.g. registered agent only)</li>
-          <li>Bundled packages by stage — Founder, Operator, Enterprise</li>
-          <li>Custom multi-entity / multi-jurisdiction scopes</li>
-          <li>Easy migration from existing providers, at no extra charge</li>
-        </ul>
-        <div class="btn-row mt-4">
-          <a href="pricing.html" class="btn btn-primary">See pricing</a>
-          <a href="contact.html" class="btn btn-text">Discuss your scope →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-white">
-  <div class="container">
-    <div class="cta-band">
-      <div>
-        <span class="eyebrow" style="color:var(--brass-light);">Not sure where to start?</span>
-        <h2>We'll listen first, <br/>then recommend honestly.</h2>
-        <p>A 30-minute call. We'll tell you which modules actually move the needle for your stage — and which ones you don't need yet.</p>
-      </div>
-      <div class="btn-row">
-        <a href="contact.html" class="btn btn-primary btn-lg" style="background:var(--brass); color:var(--ink); border-color:var(--brass);">Book Free Consultation</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a class="brand brand-dark" href="index.html">
-          <span class="brand-aion">AION</span>
-          <span class="brand-mark"></span>
-          <span class="brand-tag">ai-native platform</span>
-        </a>
-        <p>AION LLC · An AI-native corporate services platform. Formation, registered agent, tax, HR, ERP, IP and marketing — under one engine.</p>
-      </div>
-      <div>
-        <h5>Modules</h5>
-        <ul>
-          <li><a href="registered-agent.html">Registered Agent</a></li>
-          <li><a href="formation.html">Company Formation</a></li>
-          <li><a href="tax.html">Tax &amp; Bookkeeping</a></li>
-          <li><a href="hr.html">Payroll &amp; HR</a></li>
-          <li><a href="erp.html">ERP Solutions</a></li>
-          <li><a href="marketing.html">Web &amp; Marketing</a></li>
-          <li><a href="trademark.html">Trademark &amp; IP</a></li>
-          <li><a href="virtual-office.html">Virtual Office</a></li>
-          <li><a href="consulting.html">Consulting</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Company</h5>
-        <ul>
-          <li><a href="about.html">About AION</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Contact</h5>
-        <ul>
-          <li><a href="mailto:hello@aionplatform.com">hello@aionplatform.com</a></li>
-          <li><a href="tel:+15555555555">+1 (555) 555-5555</a></li>
-          <li>[Your Office Address]</li>
-          <li>Mon–Fri · 9am–6pm ET</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div>© 2026 AION LLC · All rights reserved.</div>
-      <div><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">AI Disclosures</a></div>
-    </div>
-  </div>
-</footer>
+<footer class="site-footer"><div class="container"><div class="grid"><div class="brand-block"><div style="font-family: 'Inter', sans-serif; display: inline-flex; align-items: baseline; gap: 8px; margin-bottom: 18px;"><span style="font-weight: 800; font-size: 22px; letter-spacing: -.02em; color: #FFFFFF;">AION</span><span style="width: 6px; height: 6px; background: #C9A961; border-radius: 50%; transform: translateY(-3px);"></span><span style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.5);">platform</span></div><p>An AI-native corporate services platform. Formation, registered agent, tax, payroll, ERP, IP and marketing &mdash; done by AI agents, reviewed by licensed professionals.</p><p style="margin-top: 16px; font-size: 12px; color: rgba(255,255,255,.5);">AION LLC<br/>[Your Office Address]<br/>New York, NY<br/>+1 (555) 555-5555 &middot; hello@aionplatform.com</p></div><div><h5>Services</h5><a href="registered-agent.html">Registered Agent</a><a href="formation.html">Company Formation</a><a href="tax.html">Tax &amp; Bookkeeping</a><a href="hr.html">Payroll &amp; HR</a><a href="erp.html">ERP</a><a href="marketing.html">Web &amp; Marketing</a></div><div><h5>More</h5><a href="trademark.html">Trademark &amp; IP</a><a href="virtual-office.html">Virtual Office</a><a href="consulting.html">Consulting</a><a href="services.html">All Services</a><a href="pricing.html">Pricing</a></div><div><h5>Company</h5><a href="about.html">About AION</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a></div><div><h5>Engage</h5><a href="contact.html">Book Consultation</a><a href="mailto:hello@aionplatform.com">hello@aionplatform.com</a><a href="mailto:clients@aionplatform.com">Client Support</a></div></div><div class="legal"><span>&copy; 2026 AION LLC. All rights reserved.</span><span><a href="#">Disclosures</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></span></div></div></footer>
 
 </body>
 </html>

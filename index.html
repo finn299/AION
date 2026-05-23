@@ -3,434 +3,301 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>AION — AI-Native Corporate Services Platform</title>
-<meta name="description" content="AION LLC is an AI-native corporate services firm. Formation, registered agent, tax, HR, ERP, marketing and IP — done by AI, reviewed by licensed professionals." />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<meta name="description" content="AION Platform is an AI-native corporate services platform. Formation, registered agent, tax, payroll, ERP, IP and marketing — done by AI agents, reviewed by licensed professionals." />
+<title>AI-Native Corporate Services — AION Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;1,6..72,200;1,6..72,300&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<style id="aion-overrides">
+header .brand .wordmark { display: inline-flex; align-items: baseline; gap: 8px; font-family: 'Inter', sans-serif; }
+header .brand .wordmark .ai { font-weight: 800; font-size: 22px; letter-spacing: -.02em; color: #0F1B2D; }
+header .brand .wordmark .dot { width: 6px; height: 6px; background: #A88A4A; border-radius: 50%; transform: translateY(-3px); }
+header .brand .wordmark .tag { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: #6F6F6F; }
+
+.topbar { background: #0A0A0A !important; }
+.topbar .container { color: rgba(255,255,255,.78) !important; padding: 0 0 0 28px !important; font-size: 11.5px !important; letter-spacing: .04em !important; gap: 16px !important; align-items: stretch !important; display: flex; justify-content: space-between; }
+.topbar .container > span:first-child { display: inline-flex; align-items: center; padding: 8px 0 !important; }
+.topbar-right { gap: 14px !important; align-items: stretch !important; display: inline-flex; }
+.topbar-right .locations { display: inline-flex; align-items: center; padding: 8px 0 !important; color: rgba(255,255,255,.7); }
+.topbar .member-portal-btn { padding: 0 24px !important; align-self: stretch !important; display: inline-flex !important; align-items: center !important; font-size: 11px !important; letter-spacing: .16em !important; background: #C9A961 !important; color: #FFFFFF !important; font-weight: 700 !important; }
+.topbar .member-portal-btn:hover { background: #D8B570 !important; }
+
+body section.hero h1, body .hero-image h1 {
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  font-weight: 400 !important;
+  font-size: clamp(2.4rem, 4.6vw, 4.2rem) !important;
+  line-height: 1.08 !important;
+  color: #FFFFFF !important;
+}
+body section.hero h1 em, body .hero-image h1 em {
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  font-weight: 400 !important;
+  font-style: italic !important;
+  color: #D4AF6D !important;
+}
+
+button.mobile-toggle { display: inline-flex !important; align-items: center; justify-content: center; gap: 8px; background: #0A0A0A !important; color: #FFF !important; padding: 10px 16px !important; border: 1px solid #0A0A0A; border-radius: 2px; font-family: Inter, sans-serif !important; font-size: 11px !important; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; cursor: pointer; }
+@media (min-width: 1025px) { button.mobile-toggle { display: none !important; } }
+
+nav.primary { display: flex; align-items: center; }
+nav.primary > .nav-item > a { color: #2A2F38 !important; font-size: 13px !important; font-weight: 500 !important; letter-spacing: 0.06em !important; padding: 22px 14px !important; }
+header.site-header .nav-wrap { padding: 0 28px !important; align-items: center !important; display: flex; justify-content: space-between; max-width: 1240px; margin: 0 auto; }
+nav.primary > .nav-item > a.cta-btn { background: #0A1424 !important; color: #FFFFFF !important; font-size: 12px !important; font-weight: 600 !important; letter-spacing: 0.10em !important; padding: 10px 20px !important; margin-left: 12px !important; text-transform: uppercase !important; border-radius: 2px !important; }
+nav.primary > .nav-item > a.cta-btn:hover { background: #1a2740 !important; }
+
+body footer.site-footer > div.container, body div.disclosure > div.container { max-width: 1240px !important; padding: 0 28px !important; margin: 0 auto !important; }
+
+html, body { overflow-x: hidden !important; }
+
+@media (max-width: 900px) {
+  .topbar .container { justify-content: flex-end !important; padding: 0 !important; height: 36px !important; }
+  .topbar .container > span:first-child, .topbar-right .locations { display: none !important; }
+  nav.primary { display: none; }
+  nav.primary.mobile-open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #FFF; padding: 14px 24px; border-bottom: 1px solid #E8E6E0; z-index: 99; }
+  nav.primary.mobile-open .nav-item { width: 100%; }
+  nav.primary.mobile-open .nav-item > a { display: block; padding: 14px 0 !important; border-bottom: 1px solid #E8E6E0; }
+  nav.primary.mobile-open .nav-item > a.cta-btn { margin: 14px 0 0 !important; text-align: center; }
+}
+</style>
 </head>
 <body>
 
-<!-- HEADER -->
+<div class="topbar">
+  <div class="container">
+    <span>AION Platform &middot; AI-native corporate services for ambitious companies</span>
+    <span class="topbar-right">
+      <span class="locations">New York &middot; Delaware &middot; Wyoming &middot; San Francisco &middot; Seoul</span>
+      <a href="contact.html" class="member-portal-btn">Client Portal</a>
+    </span>
+  </div>
+</div>
+
 <header class="site-header">
-  <div class="container nav-bar">
-    <a class="brand" href="index.html">
-      <span class="brand-aion">AION</span>
-      <span class="brand-mark"></span>
-      <span class="brand-tag">ai-native platform</span>
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="wordmark">
+        <span class="ai">AION</span>
+        <span class="dot"></span>
+        <span class="tag">platform</span>
+      </span>
     </a>
-    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.getElementById('nav').classList.toggle('open')">≡</button>
-    <ul class="nav-links" id="nav">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="contact.html" class="nav-cta">Book Consultation</a></li>
-    </ul>
+    <nav class="primary">
+      <div class="nav-item"><a href="about.html">ABOUT</a></div>
+      <div class="nav-item"><a href="services.html">SERVICES</a></div>
+      <div class="nav-item"><a href="pricing.html">PRICING</a></div>
+      <div class="nav-item"><a href="about.html">PLATFORM</a></div>
+      <div class="nav-item"><a href="contact.html" class="cta-btn">CONTACT</a></div>
+    </nav>
+    <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('nav.primary').classList.toggle('mobile-open')">MENU</button>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container hero-inner">
-    <div>
-      <span class="ai-badge" style="margin-bottom:30px;">AI-Native Corporate Firm</span>
-      <h1>Your back office,<br/><em>reimagined.</em></h1>
-      <p class="lead">AION is a corporate services platform built around AI. Our agents draft filings, post journal entries, run payroll and write marketing copy at machine speed. Licensed attorneys, CPAs and operators review every output before it leaves us.</p>
-      <div class="btn-row">
-        <a href="services.html" class="btn btn-primary btn-lg">Explore the Platform</a>
-        <a href="contact.html" class="btn btn-text">Book a consultation →</a>
-      </div>
-      <div class="hero-trust">
-        <span>Nine Service Modules</span>
-        <span>24/7 AI Availability</span>
-        <span>Human-Reviewed Outputs</span>
-      </div>
-    </div>
-    <aside class="hero-chat" aria-label="Sample AION conversation">
-      <div class="chat-head">
-        <div class="chat-dots"><span></span><span></span><span></span></div>
-        <div class="chat-title">aion · workspace</div>
-        <div class="chat-status"><span class="dot"></span> Online</div>
-      </div>
-      <div class="chat-body">
-        <div class="chat-msg you">
-          <div class="chat-meta">You · 09:14</div>
-          <div class="chat-bubble">Form a Delaware C-Corp called "Nimbus Robotics," 8M shares authorized, two founders.</div>
+<section class="hero hero-image with-photo" style="background-image: linear-gradient(125deg, rgba(8,12,22,.86) 0%, rgba(12,18,30,.72) 50%, rgba(20,25,35,.88) 100%), url('https://images.unsplash.com/photo-1551434678-e076c223a692?w=1800&q=80&auto=format&fit=crop'); background-size: cover; background-position: center;">
+  <div class="container">
+    <div style="display:grid; grid-template-columns: 1.35fr 1fr; gap: 72px; align-items: center;">
+      <div>
+        <div class="eyebrow" style="color: #D4AF6D;">AI-Native &middot; Multi-Jurisdiction &middot; Human-Reviewed</div>
+        <h1>Your back office, <em>reimagined</em> &mdash; AI does the work, humans hold the <em>standard</em>.</h1>
+        <p class="lead" style="margin-top: 24px;">AION Platform is an AI-native corporate services firm. Our agents draft filings, post journal entries, run payroll, and write marketing copy at machine speed. Licensed attorneys, CPAs and operators review every output before it leaves us.</p>
+        <div style="margin-top: 36px; display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="services.html" class="btn gold">Explore the platform &rarr;</a>
+          <a href="contact.html" class="btn light">Speak with our team</a>
         </div>
-        <div class="chat-msg ai">
-          <div class="chat-meta">AION · 09:14</div>
-          <div class="chat-bubble">
-            On it. Drafting Articles of Incorporation, founder stock split, and 83(b) packets now. Estimated time: <strong>2 minutes</strong>.
-            <div class="chat-pills">
-              <span>Articles drafted</span>
-              <span>EIN form prepared</span>
-              <span>Counsel queued for review</span>
-            </div>
+      </div>
+      <aside style="background: rgba(8,14,26,.62); border: 1px solid rgba(212,175,109,.28); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); padding: 28px 28px 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,.10);">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: .18em; text-transform: uppercase; color: #D4AF6D;">Platform Snapshot</span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .08em; color: rgba(255,255,255,.5);"><span style="display: inline-block; width: 6px; height: 6px; background: #D4AF6D; border-radius: 50%; vertical-align: 1px; margin-right: 6px; box-shadow: 0 0 6px #D4AF6D;"></span>LIVE &middot; 24/7</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 6px;">
+          <div style="padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,.08); border-right: 1px solid rgba(255,255,255,.08); padding-right: 16px;">
+            <div style="font-family: var(--font-display); font-size: 1.6rem; color: #fff; line-height: 1;">9</div>
+            <div style="font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.55); margin-top: 6px;">Service Modules</div>
+          </div>
+          <div style="padding: 16px 0 16px 16px; border-bottom: 1px solid rgba(255,255,255,.08);">
+            <div style="font-family: var(--font-display); font-size: 1.6rem; color: #fff; line-height: 1;">50</div>
+            <div style="font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.55); margin-top: 6px;">U.S. States Covered</div>
+          </div>
+          <div style="padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,.08); border-right: 1px solid rgba(255,255,255,.08); padding-right: 16px;">
+            <div style="font-family: var(--font-display); font-size: 1.6rem; color: #fff; line-height: 1;">Minutes</div>
+            <div style="font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.55); margin-top: 6px;">AI Draft Turnaround</div>
+          </div>
+          <div style="padding: 16px 0 16px 16px; border-bottom: 1px solid rgba(255,255,255,.08);">
+            <div style="font-family: var(--font-display); font-size: 1.6rem; color: #fff; line-height: 1;">Human</div>
+            <div style="font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.55); margin-top: 6px;">Review Before Filing</div>
           </div>
         </div>
-        <div class="chat-msg ai">
-          <div class="chat-meta">AION · 09:16</div>
-          <div class="chat-bubble">
-            Ready for your signature. Attorney <strong>S. Marquez (DE Bar #4218)</strong> reviewed and approved. Filing fee $109 passes through at cost.
+        <div style="margin-top: 18px;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.45); margin-bottom: 10px;">Engagement Status</div>
+          <div style="display: flex; justify-content: space-between; padding: 7px 0; font-size: 12px; color: rgba(255,255,255,.85); border-bottom: 1px solid rgba(255,255,255,.06);"><span>Same-day Entity Formation</span><span style="color: #D4AF6D; font-family: 'JetBrains Mono', monospace; font-size: 10.5px;">ACTIVE</span></div>
+          <div style="display: flex; justify-content: space-between; padding: 7px 0; font-size: 12px; color: rgba(255,255,255,.85); border-bottom: 1px solid rgba(255,255,255,.06);"><span>Registered Agent (50 states)</span><span style="color: #D4AF6D; font-family: 'JetBrains Mono', monospace; font-size: 10.5px;">ACTIVE</span></div>
+          <div style="display: flex; justify-content: space-between; padding: 7px 0; font-size: 12px; color: rgba(255,255,255,.85); border-bottom: 1px solid rgba(255,255,255,.06);"><span>Tax &amp; Bookkeeping (CPA-led)</span><span style="color: #D4AF6D; font-family: 'JetBrains Mono', monospace; font-size: 10.5px;">ACTIVE</span></div>
+          <div style="display: flex; justify-content: space-between; padding: 7px 0; font-size: 12px; color: rgba(255,255,255,.85);"><span>Trademark &amp; IP (USPTO)</span><span style="color: #D4AF6D; font-family: 'JetBrains Mono', monospace; font-size: 10.5px;">ACTIVE</span></div>
+        </div>
+        <a href="contact.html" style="display: block; margin-top: 18px; padding: 11px 14px; text-align: center; font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: .18em; text-transform: uppercase; color: #D4AF6D; border: 1px solid rgba(212,175,109,.4); text-decoration: none;">Book a Consultation &rarr;</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="background: var(--cream); padding-top: 48px; padding-bottom: 48px;">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+      <div style="padding: 22px 24px; border-right: 1px solid var(--line);"><div style="font-family: var(--font-display); font-size: 1.7rem; color: var(--emerald); line-height: 1; margin-bottom: 6px;">9</div><div style="font-size: 10.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--sub);">Service Modules</div></div>
+      <div style="padding: 22px 24px; border-right: 1px solid var(--line);"><div style="font-family: var(--font-display); font-size: 1.7rem; color: var(--emerald); line-height: 1; margin-bottom: 6px;">50</div><div style="font-size: 10.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--sub);">U.S. States</div></div>
+      <div style="padding: 22px 24px; border-right: 1px solid var(--line);"><div style="font-family: var(--font-display); font-size: 1.7rem; color: var(--emerald); line-height: 1; margin-bottom: 6px;">24/7</div><div style="font-size: 10.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--sub);">AI Availability</div></div>
+      <div style="padding: 22px 24px; border-right: 1px solid var(--line);"><div style="font-family: var(--font-display); font-size: 1.7rem; color: var(--emerald); line-height: 1; margin-bottom: 6px;">Fixed-Fee</div><div style="font-size: 10.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--sub);">Never Billable Hour</div></div>
+      <div style="padding: 22px 24px;"><div style="font-family: var(--font-display); font-size: 1.7rem; color: var(--emerald); line-height: 1; margin-bottom: 6px;">Human</div><div style="font-size: 10.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--sub);">Reviewed &amp; Signed</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cream">
+  <div class="container">
+    <div class="section-head left">
+      <div class="eyebrow">Service Modules</div>
+      <h2>One platform. <em>Nine</em> corporate functions.</h2>
+      <p class="lead" style="max-width: 760px;">We replace a patchwork of vendors with a single accountable partner — formation, registered agent, accounting, payroll, ERP, marketing, IP and consulting — all on one AI-native platform with credentialed humans on every output.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="num">01</div><h3>Registered Agent</h3><p>Statutory representation in all 50 U.S. states. AI classifies every incoming document in minutes, alerts your team, and files responses on time.</p><a class="more" href="registered-agent.html">Registered Agent &rarr;</a></div>
+      <div class="card"><div class="num">02</div><h3>Company Formation</h3><p>Delaware, Wyoming, Nevada or any state. AI prepares articles, operating agreements, EIN forms and S-elections — attorney-reviewed before filing.</p><a class="more" href="formation.html">Formation &rarr;</a></div>
+      <div class="card"><div class="num">03</div><h3>Tax &amp; Bookkeeping</h3><p>AI categorizes every transaction, reconciles accounts, and drafts your federal and state returns. CPAs review the books and sign every return.</p><a class="more" href="tax.html">Tax &amp; Bookkeeping &rarr;</a></div>
+      <div class="card"><div class="num">04</div><h3>Payroll &amp; HR</h3><p>Multi-state payroll, benefits administration, handbooks tuned to your jurisdictions, and ongoing compliance — run by AI, advised by HR leads.</p><a class="more" href="hr.html">Payroll &amp; HR &rarr;</a></div>
+      <div class="card"><div class="num">05</div><h3>ERP Implementation</h3><p>NetSuite, Odoo and SAP B1 rollouts. AI maps your processes, configures the system, migrates data — senior consultants validate go-live.</p><a class="more" href="erp.html">ERP &rarr;</a></div>
+      <div class="card"><div class="num">06</div><h3>Web &amp; Marketing</h3><p>Brand identity, websites, SEO, paid acquisition, email and content. AI drafts at machine speed; editors keep your brand voice intact.</p><a class="more" href="marketing.html">Web &amp; Marketing &rarr;</a></div>
+    </div>
+    <div style="margin-top: 28px;">
+      <div class="card" style="background: var(--emerald); color: #FFF; border-color: var(--emerald);">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap;">
+          <div><h3 style="color: #FFF; margin: 0;">07 &middot; Trademark, Virtual Office &amp; Consulting</h3><p style="color: rgba(255,255,255,.85); margin: 8px 0 0; max-width: 640px;">USPTO clearance, filings &amp; renewals. Prestige business addresses with AI mail intelligence. Fractional CFO, COO and GC engagements with senior operators — all under one platform.</p></div>
+          <a href="services.html" class="btn light">All modules &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">How we operate</div>
+      <h2>Four operating <em>principles</em>.</h2>
+      <p class="lead">We pair an AI-native execution engine with credentialed human reviewers. AI handles routine drafting and assembly; humans hold judgment, licensure and accountability.</p>
+    </div>
+    <div class="cards four">
+      <div class="card"><div class="num">01</div><h3>AI does the work</h3><p>Drafts filings, classifies transactions, prepares returns, generates marketing copy and assembles diligence — at machine speed, 24/7.</p></div>
+      <div class="card"><div class="num">02</div><h3>Humans hold the standard</h3><p>Every legal filing, tax return, payroll run and IP submission is reviewed and signed by a credentialed attorney, CPA or operator.</p></div>
+      <div class="card"><div class="num">03</div><h3>Fixed-fee, never billable hour</h3><p>Because AI handles the bulk of the work, we quote fixed monthly or one-time fees well below a multi-vendor stack. State fees pass through at cost.</p></div>
+      <div class="card"><div class="num">04</div><h3>One client lead, one platform</h3><p>A named human owns your relationship across every module. You email one person; they coordinate AI and specialists behind the scenes.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="container">
+    <div class="split">
+      <div>
+        <div class="eyebrow">The AION Engine</div>
+        <h2>AI agents, credentialed humans, one accountable platform.</h2>
+        <p>AION pairs AI-native drafting with licensed professional review. You describe what you need in plain English; AI agents prepare the documents, filings and analyses; an attorney, CPA or operator reviews and signs every consequential output. You see exactly what AI did and what a human did on every artifact in your portal.</p>
+        <ul class="checklist">
+          <li>Plain-English intake &mdash; describe what you need, no jargon required.</li>
+          <li>AI drafts in minutes &mdash; articles, returns, payroll runs, IP filings, marketing copy.</li>
+          <li>Credentialed human review &mdash; bar-licensed attorneys, CPAs and senior operators.</li>
+          <li>Filed and tracked &mdash; state submissions, audit trail, version history.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="callout" style="background: rgba(255,255,255,.04); border-left-color: var(--gold);">
+          <h4>Core Bundle &mdash; Operator</h4>
+          <div class="stats" style="grid-template-columns: repeat(2, 1fr); border: 0;">
+            <div style="padding: 14px 12px; border: 0;"><div class="num" style="font-size: 2rem; color: var(--gold-2);">$699/mo</div><div class="label" style="color: rgba(255,255,255,.6);">Most chosen package</div></div>
+            <div style="padding: 14px 12px; border: 0;"><div class="num" style="font-size: 2rem; color: var(--gold-2);">5 states</div><div class="label" style="color: rgba(255,255,255,.6);">Registered Agent coverage</div></div>
+            <div style="padding: 14px 12px; border: 0;"><div class="num" style="font-size: 2rem; color: var(--gold-2);">≤25 EE</div><div class="label" style="color: rgba(255,255,255,.6);">Payroll administration</div></div>
+            <div style="padding: 14px 12px; border: 0;"><div class="num" style="font-size: 2rem; color: var(--gold-2);">1/yr</div><div class="label" style="color: rgba(255,255,255,.6);">Trademark filing</div></div>
           </div>
         </div>
-        <div class="chat-input">
-          <span class="chat-prompt">›</span>
-          <span class="chat-placeholder">Describe what you need…</span>
-          <span class="chat-caret">|</span>
+        <div style="margin-top: 20px;">
+          <a href="pricing.html" class="btn gold">All pricing &rarr;</a>
         </div>
       </div>
-    </aside>
+    </div>
   </div>
 </section>
 
-<!-- AI ENGINE DIAGRAM -->
-<section class="section-off">
+<section class="cream">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">The AION Engine</span>
-      <h2>One AI core.<br/><em>Nine corporate functions.</em></h2>
-      <div class="ornament"><span></span></div>
-      <p>Every service runs on the same AI platform — formation paperwork, registered agent forwarding, bookkeeping, payroll, IP filings and marketing all flow through a single engine that knows your company.</p>
+      <div class="eyebrow">Built for founders, operators and finance leaders</div>
+      <h2>An <em>AI-native</em> firm with humans on the line.</h2>
+      <p class="lead">AION LLC is a corporate services firm built around an AI platform. Licensed attorneys, CPAs and operators review and sign every output before it leaves us.</p>
     </div>
-
-    <svg class="workflow-svg" viewBox="0 0 1000 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AION AI engine connecting nine corporate services">
-      <defs>
-        <radialGradient id="aionCore" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#1F1F1D"/>
-          <stop offset="100%" stop-color="#0A0A0A"/>
-        </radialGradient>
-      </defs>
-
-      <g opacity="0.5">
-        <circle cx="500" cy="310" r="290" fill="none" stroke="#B8945A" stroke-width="0.6" stroke-dasharray="1 7"/>
-        <circle cx="500" cy="310" r="240" fill="none" stroke="#B8945A" stroke-width="0.5" stroke-dasharray="1 5">
-          <animateTransform attributeName="transform" type="rotate" from="0 500 310" to="360 500 310" dur="80s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="500" cy="310" r="170" fill="none" stroke="#DEDDD8" stroke-width="0.6"/>
-      </g>
-
-      <g stroke="#B8945A" stroke-width="0.6" stroke-dasharray="3 4" opacity="0.5">
-        <line x1="500" y1="310" x2="500" y2="70"/>
-        <line x1="500" y1="310" x2="654" y2="126"/>
-        <line x1="500" y1="310" x2="736" y2="268"/>
-        <line x1="500" y1="310" x2="708" y2="430"/>
-        <line x1="500" y1="310" x2="582" y2="536"/>
-        <line x1="500" y1="310" x2="418" y2="536"/>
-        <line x1="500" y1="310" x2="292" y2="430"/>
-        <line x1="500" y1="310" x2="264" y2="268"/>
-        <line x1="500" y1="310" x2="346" y2="126"/>
-      </g>
-
-      <g><circle cx="500" cy="70" r="34" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1"/>
-        <text x="500" y="76" font-family="'Cormorant Garamond', serif" font-style="italic" font-weight="500" font-size="18" fill="#8E6E36" text-anchor="middle">01</text>
-        <text x="500" y="22" font-family="Inter, sans-serif" font-size="11" letter-spacing="2.5" font-weight="600" fill="#0A0A0A" text-anchor="middle">FORMATION</text></g>
-      <g><circle cx="654" cy="126" r="34" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1"/>
-        <text x="654" y="132" font-family="'Cormorant Garamond', serif" font-style="italic" font-weight="500" font-size="18" fill="#8E6E36" text-anchor="middle">02</text>
-        <text x="700" y="100" font-family="Inter, sans-serif" font-size="11" letter-spacing="2.5" font-weight="600" fill="#0A0A0A" text-anchor="start">TAX &amp; BOOKS</text></g>
-      <g><circle cx="736" cy="268" r="34" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1"/>
-        <text x="736" y="274" font-family="'Cormorant Garamond', serif" font-style="italic" font-weight="500" font-size="18" fill="#8E6E36" text-anchor="middle">03</text>
-        <text x="780" y="272" font-family="Inter, sans-serif" font-size="11" letter-spacing="2.5" font-weight="600" fill="#0A0A0A" text-anchor="start">PAYROLL · HR</text></g>
-      <g><circle cx="708" cy="430" r="34" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1"/>
-        <text x="708" y="436" font-family="'Cormorant Garamond', serif" font-style="italic" font-weight="500" font-size="18" fill="#8E6E36" text-anchor="middle">04</text>
-        <text x="750" y="440" font-family="Inter, sans-serif" font-size="11" letter-spacing="2.5" font-weight="600" fill="#0A0A0A" text-anchor="start">ERP</text></g>
-      <g><circle cx="582" cy="536" r="34" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1"/>
-        <text x="582" y="542" font-family="'Cormorant Garamond', serif" font-style="italic" font-weight="500" font-size="18" fill="#8E6E36" text-anchor="middle">05</text>
-        <text x="582" y="600" font-family="Inter, sans-serif" font-size="11" letter-spacing="2.5" font-weight="600" fill="#0A0A0A" text-anchor="middle">WEB · MARKETING</text></g>
-      <g><circle cx="418" cy="536" r="34" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1"/>
-        <text x="418" y="542" font-family="'Cormorant Garamond', serif" font-style="italic" font-weight="500" font-size="18" fill="#8E6E36" text-anchor="middle">06</text>
-        <text x="418" y="600" font-family="Inter, sans-serif" font-size="11" letter-spacing="2.5" font-weight="600" fill="#0A0A0A" text-anchor="middle">TRADEMARK · IP</text></g>
-      <g><circle cx="292" cy="430" r="34" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1"/>
-        <text x="292" y="436" font-family="'Cormorant Garamond', serif" font-style="italic" font-weight="500" font-size="18" fill="#8E6E36" text-anchor="middle">07</text>
-        <text x="250" y="440" font-family="Inter, sans-serif" font-size="11" letter-spacing="2.5" font-weight="600" fill="#0A0A0A" text-anchor="end">VIRTUAL OFFICE</text></g>
-      <g><circle cx="264" cy="268" r="34" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1"/>
-        <text x="264" y="274" font-family="'Cormorant Garamond', serif" font-style="italic" font-weight="500" font-size="18" fill="#8E6E36" text-anchor="middle">08</text>
-        <text x="220" y="272" font-family="Inter, sans-serif" font-size="11" letter-spacing="2.5" font-weight="600" fill="#0A0A0A" text-anchor="end">CONSULTING</text></g>
-      <g><circle cx="346" cy="126" r="34" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1"/>
-        <text x="346" y="132" font-family="'Cormorant Garamond', serif" font-style="italic" font-weight="500" font-size="18" fill="#8E6E36" text-anchor="middle">09</text>
-        <text x="300" y="100" font-family="Inter, sans-serif" font-size="11" letter-spacing="2.5" font-weight="600" fill="#0A0A0A" text-anchor="end">REGISTERED AGENT</text></g>
-
-      <g>
-        <circle cx="500" cy="310" r="92" fill="url(#aionCore)"/>
-        <circle cx="500" cy="310" r="92" fill="none" stroke="#DCC59B" stroke-width="0.5" opacity="0.6">
-          <animate attributeName="r" values="92;104;92" dur="3.5s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.6;0;0.6" dur="3.5s" repeatCount="indefinite"/>
-        </circle>
-      </g>
-      <text x="500" y="307" font-family="Inter, sans-serif" font-size="22" letter-spacing="8" font-weight="800" fill="#FFFFFF" text-anchor="middle">AION</text>
-      <text x="500" y="332" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="11" letter-spacing="2" fill="#DCC59B" text-anchor="middle">ai engine</text>
-      <text x="500" y="380" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="14" fill="#8E6E36" text-anchor="middle">— connects everything you do —</text>
-    </svg>
-
-    <div class="ai-meta">
-      <div class="ai-meta-item"><div class="num">24/7</div><div class="lbl">AI Availability</div></div>
-      <div class="ai-meta-item"><div class="num">Minutes</div><div class="lbl">From Request to Draft</div></div>
-      <div class="ai-meta-item"><div class="num">Human</div><div class="lbl">Review Before Filing</div></div>
+    <div style="text-align: center;">
+      <a href="about.html" class="btn">About AION &rarr;</a>
     </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS — flow diagram -->
-<section class="section-white">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">The Workflow</span>
-      <h2>Request to filing,<br/><em>in a single thread.</em></h2>
-      <div class="ornament"><span></span></div>
-    </div>
-
-    <svg class="workflow-svg" viewBox="0 0 1000 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AION workflow">
-      <line x1="120" y1="140" x2="880" y2="140" stroke="#DEDDD8" stroke-width="1"/>
-      <g>
-        <circle cx="140" cy="140" r="46" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1.2"/>
-        <text x="140" y="146" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="22" fill="#0A0A0A" text-anchor="middle">01</text>
-        <text x="140" y="80" font-family="Inter, sans-serif" font-size="10" letter-spacing="2.5" font-weight="700" fill="#0A0A0A" text-anchor="middle">YOU REQUEST</text>
-        <text x="140" y="210" font-family="Inter, sans-serif" font-size="11" fill="#7A7A75" text-anchor="middle">"Form a Delaware C-Corp"</text>
-        <text x="140" y="226" font-family="Inter, sans-serif" font-size="11" fill="#7A7A75" text-anchor="middle">"File our trademark"</text>
-        <text x="140" y="242" font-family="Inter, sans-serif" font-size="11" fill="#7A7A75" text-anchor="middle">"Close the books for May"</text>
-      </g>
-      <g>
-        <circle cx="380" cy="140" r="46" fill="#0A0A0A" stroke="#B8945A" stroke-width="1.2"/>
-        <text x="380" y="138" font-family="Inter, sans-serif" font-size="11" letter-spacing="4" font-weight="800" fill="#FFFFFF" text-anchor="middle">AION</text>
-        <text x="380" y="154" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="9" fill="#DCC59B" text-anchor="middle">agent</text>
-        <text x="380" y="80" font-family="Inter, sans-serif" font-size="10" letter-spacing="2.5" font-weight="700" fill="#0A0A0A" text-anchor="middle">AI DRAFTS</text>
-        <text x="380" y="210" font-family="Inter, sans-serif" font-size="11" fill="#7A7A75" text-anchor="middle">Pulls relevant statutes</text>
-        <text x="380" y="226" font-family="Inter, sans-serif" font-size="11" fill="#7A7A75" text-anchor="middle">Drafts documents</text>
-        <text x="380" y="242" font-family="Inter, sans-serif" font-size="11" fill="#7A7A75" text-anchor="middle">Prepares filings</text>
-        <circle cx="380" cy="140" r="46" fill="none" stroke="#DCC59B" stroke-width="1" opacity="0.6">
-          <animate attributeName="r" values="46;58;46" dur="3s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.6;0;0.6" dur="3s" repeatCount="indefinite"/>
-        </circle>
-      </g>
-      <g>
-        <circle cx="620" cy="140" r="46" fill="#FFFFFF" stroke="#0A0A0A" stroke-width="1.2"/>
-        <text x="620" y="146" font-family="'Cormorant Garamond', serif" font-style="italic" font-size="22" fill="#0A0A0A" text-anchor="middle">03</text>
-        <text x="620" y="80" font-family="Inter, sans-serif" font-size="10" letter-spacing="2.5" font-weight="700" fill="#0A0A0A" text-anchor="middle">HUMAN REVIEWS</text>
-        <text x="620" y="210" font-family="Inter, sans-serif" font-size="11" fill="#7A7A75" text-anchor="middle">Attorney / CPA checks</text>
-        <text x="620" y="226" font-family="Inter, sans-serif" font-size="11" fill="#7A7A75" text-anchor="middle">Approves or edits</text>
-        <text x="620" y="242" font-family="Inter, sans-serif" font-size="11" fill="#7A7A75" text-anchor="middle">Signs off in your portal</text>
-      </g>
-      <g>
-        <circle cx="860" cy="140" r="46" fill="#B8945A" stroke="#0A0A0A" stroke-width="1.2"/>
-        <text x="860" y="148" font-family="'Cormorant Garamond', serif" font-size="22" font-weight="600" fill="#0A0A0A" text-anchor="middle">✓</text>
-        <text x="860" y="80" font-family="Inter, sans-serif" font-size="10" letter-spacing="2.5" font-weight="700" fill="#0A0A0A" text-anchor="middle">FILED / DELIVERED</text>
-        <text x="860" y="210" font-family="Inter, sans-serif" font-size="11" fill="#7A7A75" text-anchor="middle">State filings submitted</text>
-        <text x="860" y="226" font-family="Inter, sans-serif" font-size="11" fill="#7A7A75" text-anchor="middle">Documents delivered</text>
-        <text x="860" y="242" font-family="Inter, sans-serif" font-size="11" fill="#7A7A75" text-anchor="middle">Audit trail saved</text>
-      </g>
-      <g fill="#B8945A">
-        <polygon points="248,140 240,135 240,145"/>
-        <polygon points="488,140 480,135 480,145"/>
-        <polygon points="728,140 720,135 720,145"/>
-      </g>
-    </svg>
-  </div>
-</section>
-
-<!-- SERVICES OVERVIEW -->
-<section class="section-off">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">The Modules</span>
-      <h2>Nine functions.<br/><em>One platform.</em></h2>
-      <div class="ornament"><span></span></div>
-    </div>
-
-    <div class="grid grid-3">
-      <a class="service-card" href="registered-agent.html">
-        <div class="num">— 01</div>
-        <h3>Registered Agent</h3>
-        <p>AI receives and classifies service of process the moment it arrives — alerts you in minutes, files responses on time.</p>
-        <span class="more">Learn more</span>
-      </a>
-      <a class="service-card" href="formation.html">
-        <div class="num">— 02</div>
-        <h3>Company Formation</h3>
-        <p>AI prepares articles, operating agreements, EIN forms and S-elections for any U.S. state — attorney-reviewed before filing.</p>
-        <span class="more">Learn more</span>
-      </a>
-      <a class="service-card" href="tax.html">
-        <div class="num">— 03</div>
-        <h3>Tax &amp; Bookkeeping</h3>
-        <p>AI categorizes transactions, reconciles accounts and drafts returns. CPAs review, sign and file.</p>
-        <span class="more">Learn more</span>
-      </a>
-      <a class="service-card" href="hr.html">
-        <div class="num">— 04</div>
-        <h3>Payroll &amp; HR</h3>
-        <p>AI runs payroll cycles, generates handbooks tuned to your states and tracks every compliance deadline.</p>
-        <span class="more">Learn more</span>
-      </a>
-      <a class="service-card dark" href="erp.html">
-        <div class="num">— 05</div>
-        <h3>ERP Implementation</h3>
-        <p>AI maps your processes, configures the ERP and migrates data. Consultants validate before go-live.</p>
-        <span class="more">Learn more</span>
-      </a>
-      <a class="service-card" href="marketing.html">
-        <div class="num">— 06</div>
-        <h3>Web &amp; Marketing</h3>
-        <p>AI drafts copy, generates designs, builds sites and runs email sequences — editors keep your brand on tone.</p>
-        <span class="more">Learn more</span>
-      </a>
-      <a class="service-card" href="trademark.html">
-        <div class="num">— 07</div>
-        <h3>Trademark &amp; IP</h3>
-        <p>AI runs clearance searches, prepares USPTO applications and tracks office actions. Counsel signs each filing.</p>
-        <span class="more">Learn more</span>
-      </a>
-      <a class="service-card" href="virtual-office.html">
-        <div class="num">— 08</div>
-        <h3>Virtual Office</h3>
-        <p>AI scans, classifies and summarizes your mail; routes time-sensitive items to a human concierge.</p>
-        <span class="more">Learn more</span>
-      </a>
-      <a class="service-card" href="consulting.html">
-        <div class="num">— 09</div>
-        <h3>Consulting</h3>
-        <p>AI assembles data rooms, builds models and drafts decks. Senior operators provide the judgment.</p>
-        <span class="more">Learn more</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- HUMAN OVERSIGHT -->
-<section class="section-white">
-  <div class="container">
-    <div class="feature-row">
-      <div>
-        <span class="eyebrow">Human Oversight</span>
-        <h2>AI speeds the work.<br/><em>Humans hold the line.</em></h2>
-        <hr class="rule"/>
-        <p>AI is excellent at drafting, classifying and assembling. It is not a licensed attorney or CPA, and we do not pretend otherwise.</p>
-        <p>Every legal filing, tax return, payroll run and IP submission is reviewed and signed off by a credentialed human before it leaves AION. You always know which decisions are made by AI and which are made by a person — it is visible on every artifact.</p>
-        <div class="btn-row mt-4">
-          <a href="about.html" class="btn btn-outline">Our approach</a>
-          <a href="contact.html" class="btn btn-primary">Talk to a human →</a>
-        </div>
-      </div>
-      <div class="ai-stack">
-        <span class="ai-badge" style="margin-bottom:6px;">Review Rules</span>
-        <h4 style="font-family: var(--font-serif); font-style: italic; font-weight: 500; font-size: 1.3rem;">AI vs. Human in every module</h4>
-        <div class="ai-stack-item">
-          <span class="tag-sm">AI</span>
-          <div><strong>Drafts &amp; classifies</strong><div class="desc">Generates documents, categorizes transactions, summarizes mail, runs searches.</div></div>
-        </div>
-        <div class="ai-stack-item">
-          <span class="tag-sm">AI</span>
-          <div><strong>Assembles &amp; calculates</strong><div class="desc">Builds models, prepares schedules, drafts emails and decks.</div></div>
-        </div>
-        <div class="ai-stack-item">
-          <span class="tag-sm">Human</span>
-          <div><strong>Reviews &amp; signs</strong><div class="desc">Licensed attorneys, CPAs and operators check every output, exercise judgment, and put their name on it.</div></div>
-        </div>
-        <div class="ai-stack-item">
-          <span class="tag-sm">Human</span>
-          <div><strong>Advises &amp; decides</strong><div class="desc">Strategy, judgment calls, sensitive negotiations and edge cases — handled by your account lead.</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY AI -->
-<section class="section-off">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Why AI-Native</span>
-      <h2>The same work,<br/><em>at a fraction of the friction.</em></h2>
-      <div class="ornament"><span></span></div>
-    </div>
-    <div class="grid grid-3">
-      <div>
-        <div class="kicker">— Speed</div>
-        <h3>Drafts in minutes, not days.</h3>
-        <p>Traditional firms bill in hours and respond in weeks. Our AI delivers a first draft within minutes — a human reviews and refines it the same business day.</p>
-      </div>
-      <div>
-        <div class="kicker">— Cost</div>
-        <h3>Fixed-fee, never billable hour.</h3>
-        <p>Because AI handles the bulk of the work, we quote fixed fees well below a multi-vendor stack. State and agency fees pass through at cost.</p>
-      </div>
-      <div>
-        <div class="kicker">— Availability</div>
-        <h3>Always on, never on holiday.</h3>
-        <p>The engine doesn't sleep. Submit a question at 2 a.m. and find an AI draft waiting when your reviewer logs in.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="section-white">
-  <div class="container">
-    <div class="cta-band">
-      <div>
-        <span class="eyebrow" style="color:var(--brass-light);">Get in Touch</span>
-        <h2>Run your back office on AI.<br/><em>With humans on call.</em></h2>
-        <p>Book a free 30-minute consultation. We'll show you the platform and recommend exactly which modules fit your stage.</p>
-      </div>
-      <div class="btn-row">
-        <a href="contact.html" class="btn btn-primary btn-lg" style="background:var(--brass); border-color:var(--brass); color:var(--ink);">Book Free Consultation</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a class="brand brand-dark" href="index.html">
-          <span class="brand-aion">AION</span>
-          <span class="brand-mark"></span>
-          <span class="brand-tag">ai-native platform</span>
-        </a>
-        <p>AION LLC · An AI-native corporate services platform. Formation, registered agent, tax, HR, ERP, IP and marketing — under one engine.</p>
+    <div class="grid">
+      <div class="brand-block">
+        <div style="font-family: 'Inter', sans-serif; display: inline-flex; align-items: baseline; gap: 8px; margin-bottom: 18px;">
+          <span style="font-weight: 800; font-size: 22px; letter-spacing: -.02em; color: #FFFFFF;">AION</span>
+          <span style="width: 6px; height: 6px; background: #C9A961; border-radius: 50%; transform: translateY(-3px);"></span>
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.5);">platform</span>
+        </div>
+        <p>An AI-native corporate services platform. Formation, registered agent, tax, payroll, ERP, IP and marketing &mdash; done by AI agents, reviewed by licensed professionals.</p>
+        <p style="margin-top: 16px; font-size: 12px; color: rgba(255,255,255,.5);">AION LLC<br/>[Your Office Address]<br/>New York, NY<br/>+1 (555) 555-5555 &middot; hello@aionplatform.com</p>
       </div>
       <div>
-        <h5>Modules</h5>
-        <ul>
-          <li><a href="registered-agent.html">Registered Agent</a></li>
-          <li><a href="formation.html">Company Formation</a></li>
-          <li><a href="tax.html">Tax &amp; Bookkeeping</a></li>
-          <li><a href="hr.html">Payroll &amp; HR</a></li>
-          <li><a href="erp.html">ERP Solutions</a></li>
-          <li><a href="marketing.html">Web &amp; Marketing</a></li>
-          <li><a href="trademark.html">Trademark &amp; IP</a></li>
-          <li><a href="virtual-office.html">Virtual Office</a></li>
-          <li><a href="consulting.html">Consulting</a></li>
-        </ul>
+        <h5>Services</h5>
+        <a href="registered-agent.html">Registered Agent</a>
+        <a href="formation.html">Company Formation</a>
+        <a href="tax.html">Tax &amp; Bookkeeping</a>
+        <a href="hr.html">Payroll &amp; HR</a>
+        <a href="erp.html">ERP</a>
+        <a href="marketing.html">Web &amp; Marketing</a>
+      </div>
+      <div>
+        <h5>More Modules</h5>
+        <a href="trademark.html">Trademark &amp; IP</a>
+        <a href="virtual-office.html">Virtual Office</a>
+        <a href="consulting.html">Consulting</a>
+        <a href="services.html">All Services</a>
+        <a href="pricing.html">Pricing</a>
       </div>
       <div>
         <h5>Company</h5>
-        <ul>
-          <li><a href="about.html">About AION</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="about.html">About AION</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
       </div>
       <div>
-        <h5>Contact</h5>
-        <ul>
-          <li><a href="mailto:hello@aionplatform.com">hello@aionplatform.com</a></li>
-          <li><a href="tel:+15555555555">+1 (555) 555-5555</a></li>
-          <li>[Your Office Address]</li>
-          <li>Mon–Fri · 9am–6pm ET</li>
-        </ul>
+        <h5>Engage</h5>
+        <a href="contact.html">Book Consultation</a>
+        <a href="mailto:hello@aionplatform.com">hello@aionplatform.com</a>
+        <a href="mailto:clients@aionplatform.com">Client Support</a>
+        <a href="contact.html">Careers</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <div>© 2026 AION LLC · All rights reserved.</div>
-      <div><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">AI Disclosures</a></div>
+    <div class="legal">
+      <span>&copy; 2026 AION LLC. All rights reserved.</span>
+      <span><a href="#">Disclosures</a> &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot; <a href="#">AI Disclosures</a></span>
     </div>
   </div>
 </footer>
+
+<div class="disclosure">
+  <div class="container">
+    <span class="label">Important Notice &middot; Service Disclosures</span>
+    <p><strong>AION LLC</strong> is an AI-native corporate services platform. AION is not a law firm or accounting firm by itself; certain services (legal filings, tax returns, IP submissions) are delivered through licensed attorneys, CPAs and IP counsel who review and sign every consequential output. The use of AI to draft documents does not by itself create an attorney-client or CPA-client relationship.</p>
+    <p>Information on this site is provided for general informational purposes only and does not constitute legal, tax, accounting or investment advice. State filing fees, USPTO fees and third-party platform fees are passed through at cost and itemized on every invoice.</p>
+    <p>AI-generated drafts are reviewed by credentialed humans before being filed or delivered. Each artifact in your portal shows which content was generated by AI and which was approved by a licensed reviewer, together with the reviewer's name and credential (bar number, CPA number, etc.) where applicable.</p>
+  </div>
+</div>
 
 </body>
 </html>
